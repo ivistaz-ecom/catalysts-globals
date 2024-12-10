@@ -63,12 +63,12 @@ const Organisations = () => {
       {/* 2nd Row */}
       <div className="flex flex-col md:flex-row items-stretch h-auto mt-[0.5px]">
         {/* Left Column - Logo */}
-        <div className="w-full md:w-1/4 flex justify-center items-center  ">
+        <div className="w-full md:w-1/4  flex justify-center items-center bg-gradient-to-r from-[#ae2e6c] via-[#2d356a]  to-[#8a7a2a] ">
           <div className="w-full h-full flex items-center justify-center">
             <Image
-              src="/img/impact_catalyst.png"
+              src="/img/cat1.png"
               alt="Logo"
-              className="object-cover"
+              className="object-cover p-16"
               width={1000}
               height={1000}
             />
