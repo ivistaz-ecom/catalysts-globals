@@ -19,7 +19,6 @@ const Homepage = () => {
         }}
       ></div>
 
-      {/* Content Section */}
       <div className="relative z-10 flex flex-col items-center justify-center flex-1">
         <Image
           src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
