@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css"
 import Image from "next/image"
 import Link from "next/link"
 
-import { slideData } from "@/app/utils/organisation-data"
+import { slideData } from "@/app/utils/catalystorganisation-data"
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props
