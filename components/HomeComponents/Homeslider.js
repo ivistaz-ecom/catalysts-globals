@@ -17,7 +17,7 @@ const NextArrow = (props) => {
         ...style,
         display: "block",
         backgroundColor: "black",
-        color:"black",
+        color: "black",
         borderRadius: "50%",
         width: "30px",
         height: "30px",
@@ -37,7 +37,7 @@ const PrevArrow = (props) => {
         ...style,
         display: "block",
         backgroundColor: "black",
-        color:"black",
+        color: "black",
         borderRadius: "50%",
         width: "30px",
         height: "30px",
@@ -98,7 +98,7 @@ export default function SimpleSlider() {
         <div className="container mx-auto py-6">
           <div className="flex flex-col gap-10 lg:px-0 px-5">
             <div>
-              <p className="container mx-auto text-center text-3xl ">
+              <p className="container mx-auto text-center text-[36px] ">
                 The Catalyst Group of Organisations
               </p>
             </div>
@@ -129,9 +129,9 @@ export default function SimpleSlider() {
                           href={slide.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-black hover:underline"
+                          className="text-black hover:underline text-[14px]"
                         >
-                          Read More
+                          READ MORE
                         </Link>
                       </div>
                     </div>

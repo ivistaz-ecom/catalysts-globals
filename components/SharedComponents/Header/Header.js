@@ -27,12 +27,9 @@ const Header = () => {
     }
   }, [pathname])
 
-  const linkClasses = () => {
-    if (pathname === "/organisations" || pathname === "/partners") {
-      return `block py-2 px-4 rounded text-white hover:text-red-500`
-    }
+  const linkClasses = (path) => {
     return `block py-2 px-4 rounded ${
-      isScrolled ? "text-white" : "text-white"
+      pathname === path ? "text-red-500" : "text-white"
     } hover:text-red-500`
   }
 
@@ -72,23 +69,32 @@ const Header = () => {
               className="w-auto h-auto"
             />
           </Link>
-          <Link href="/" className={linkClasses()}>
+          <Link href="/" className={linkClasses("/")}>
             Home
           </Link>
-          <Link href="/organisations" className={linkClasses()}>
+          <Link href="/organisations" className={linkClasses("/organisations")}>
             Organisations
           </Link>
-          <Link href="/partners" className={linkClasses()}>
+          <Link href="/partners" className={linkClasses("/partners")}>
             Partners
           </Link>
-          <a
+
+          <Link
             href="https://communityactioncollab.org/"
             target="_blank"
             rel="noopener noreferrer"
             className={linkClasses()}
           >
             Community Action Collab
-          </a>
+          </Link>
+          <Link
+            href="https://iec.catalysts.global/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClasses()}
+          >
+            Institutional Ethics Committee
+          </Link>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -196,6 +202,7 @@ const Header = () => {
                   Partners
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="https://communityactioncollab.org/"
@@ -205,6 +212,17 @@ const Header = () => {
                   onClick={toggleMenu}
                 >
                   Community Action Collab
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://iec.catalysts.global/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block py-2 px-4 text-white`}
+                  onClick={toggleMenu}
+                >
+                  Institutional Ethics Committee
                 </Link>
               </li>
             </ul>

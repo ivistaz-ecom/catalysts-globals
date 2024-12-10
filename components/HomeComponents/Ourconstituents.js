@@ -3,7 +3,7 @@ import React from "react"
 
 const Ourconstituents = () => {
   return (
-    <div className="pt-10 bg-[#F3F3F5] pb-10">
+    <div className="pt-10 bg-[#F3F3F5] pb-10 ">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center">
@@ -29,7 +29,7 @@ const Ourconstituents = () => {
     
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-[14px]">
           {/* Card 1 */}
           <div className="p-6 bg-white shadow-lg rounded-lg">
             <p className="text-gray-700">

@@ -2,9 +2,10 @@ import React from "react"
 import Image from "next/image"
 const Contactus = () => {
   return (
+    <>
     <div className="footer-contactus py-16 bg-[#E8E8EF]">
-      <div className="container mx-auto px-6">
-        <h3 className="text-3xl font-semibold text-center mb-8">Contact Us</h3>
+      <div className="container mx-auto lg:px-6">
+        <h3 className="text-[36px]  text-center mb-8">Contact Us</h3>
         <div className="flex flex-wrap ">
           <div className="w-full md:w-1/3 p-4">
             <div className="footer-locations-single text-left bg-white p-6 rounded-lg shadow-lg">
@@ -21,7 +22,7 @@ const Contactus = () => {
               </p>
               <a
                 href="https://goo.gl/maps/SA4WkU1RBgkRcMnd8"
-                className="text-black rounded-full bg-[#FFFFFF] px-3 py-3 underline border-black border "
+                className="text-black rounded-full bg-[#FFFFFF] px-5 py-3  underline border-black border "
                 target="blank"
               >
                 Get Directions
@@ -44,7 +45,7 @@ const Contactus = () => {
               </p>
               <a
                 href="https://goo.gl/maps/SeiB97CAc1vb267i8"
-                className="text-black rounded-full bg-[#FFFFFF] px-3 py-3 underline border-black border "
+                className="text-black rounded-full bg-[#FFFFFF] px-5 py-3 underline border-black border "
                 target="blank"
               >
                 Get Directions
@@ -67,7 +68,7 @@ const Contactus = () => {
               </p>
               <a
                 href="https://goo.gl/maps/SeiB97CAc1vb267i8"
-                 className="text-black rounded-full bg-[#FFFFFF] px-3 py-3 underline border-black border "
+                className="text-black rounded-full bg-[#FFFFFF] px-5 py-3 underline border-black border "
                 target="blank"
               >
                 Get Directions
@@ -76,7 +77,14 @@ const Contactus = () => {
           </div>
         </div>
       </div>
+     
     </div>
+     <p className="text-center bg-[#191D42] py-6 text-white text-[12px]">
+     © 2024 Catalysts Foundation - All Rights Reserved | Terms & Conditions |
+     Disclaimer
+  
+ </p>
+ </>
   )
 }
 

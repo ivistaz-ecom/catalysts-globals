@@ -4,7 +4,7 @@ import Link from "next/link"
 const Organisations = () => {
   return (
     <div>
-      <p className="text-4xl text-center p-10 pt-36">Our Organisations</p>
+      <p className="text-[36px] text-center p-10 pt-36">Our Organisations</p>
       <div className="flex flex-col md:flex-row items-stretch h-auto mt-[0.5px]">
         {/* Left Column - Logo */}
         <div className="w-full md:w-1/4 flex justify-center items-center bg-[#622F88] p-8">
@@ -25,7 +25,7 @@ const Organisations = () => {
             Catalyst Management Services <br />
           </h2>
           <p className="text-xl ">(established in 1994)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             A private limited organisation which specializes in providing
             consulting and professional services. CMS partners to create social
             impact, guaranteeing results through development solutions and
@@ -33,7 +33,7 @@ const Organisations = () => {
             that leads to investments in ideas, individuals and institutions,
             creating shared value and maximizing social returns.
           </p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             CMS solutions range from Design (strategy and planning), Evidence
             (research, evaluation and insights), Monitoring (systems,
             accountability and performance), Learning systems (accretion and
@@ -79,7 +79,7 @@ const Organisations = () => {
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
           <h2 className="text-2xl ">Impact Catalyst Foundation (ICF)</h2>
           <p className="text-xl ">(established in 1994)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             is a US public charity that is part of the Catalyst Group of
             organisations, headquartered in India. The Catalyst Group was
             founded in 1994 and is a social enterprise platform focused on the
@@ -128,19 +128,19 @@ const Organisations = () => {
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
           <h2 className="text-2xl ">Swasti</h2>
           <p className="text-xl ">(established in 2004)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             A registered Society (not-for-profit), Swasti – The Health Catalyst
             – is a health resource centre.Which achieves public health outcomes
             for the marginalised, through the delivery of end-to-end solutions
             as well as short and long term support and facilitation, combining
             research and practice.
           </p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             Swasti – The Health Catalyst – was envisioned as an organisation to
             transform the lives of the marginalised communities by ensuring
-            their access to quality healthcare. Swasti&apos;s work has fuelled impact
-            by promoting healthcare access thereby contributing to poverty
-            alleviation. Swasti have supported governments, donors and
+            their access to quality healthcare. Swasti&apos;s work has fuelled
+            impact by promoting healthcare access thereby contributing to
+            poverty alleviation. Swasti have supported governments, donors and
             development partners to design solutions in public health. Swasti
             has directly reached over 400,000 people through our various
             initiatives.
@@ -186,7 +186,7 @@ const Organisations = () => {
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
           <h2 className="text-2xl ">Vrutti</h2>
           <p className="text-xl ">(established in 2002)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             A registered Society (not-for-profit), Vrutti is a Livelihood Impact
             Partner which enhances people&apos;s well-being through knowledge,
             innovation and transformative actions and brings about solutions at
@@ -242,7 +242,7 @@ const Organisations = () => {
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
           <h2 className="text-2xl ">Fuzhio</h2>
           <p className="text-xl ">(established in 2005)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             Facilitating Market Access to Women and Smallholder Farmers and
             Marginalised Communities to Maximise Returns for their Products and
             Services. Fuzhio promotes Impact Products directly to customers on
@@ -291,7 +291,7 @@ const Organisations = () => {
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
           <h2 className="text-2xl ">Green Foundation</h2>
           <p className="text-xl ">(established in 1994)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             GREEN Foundation works toward a well-preserved, diverse ecosystem
             that will sustain the rural livelihoods of the present generation
             without eroding the resource base of the future. Our work to empower
@@ -342,17 +342,17 @@ const Organisations = () => {
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
           <h2 className="text-2xl ">Upfront</h2>
           <p className="text-xl ">(established in 2022)</p>
-          <p className="mt-4">
+          <p className=" mt-4 text-[14px]">
             Upfront works with front line workers and the “systems” by changing
             mindsets, behaviours and practices; improving skills, financial
             security, processes and services; building agency, ensuring voices
             and choices; and establishing partnerships and collaborations.
           </p>
-          <p className="mt-4">
-            Creating a positive impact on the workers&apos; ecosystem by leveraging a
-            systems change approach while ensuring knowledge, skills (personal
-            and professional), and services (health and wealth) through a
-            platform approach that aggregates solutions and providers.
+          <p className=" mt-4 text-[14px]">
+            Creating a positive impact on the workers&apos; ecosystem by
+            leveraging a systems change approach while ensuring knowledge,
+            skills (personal and professional), and services (health and wealth)
+            through a platform approach that aggregates solutions and providers.
           </p>
 
           <Link

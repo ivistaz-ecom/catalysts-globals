@@ -5,11 +5,11 @@ const WhatWeDo = () => {
     <section className="py-12 bg-white">
       {/* Title Section */}
       <div className="text-center mb-8">
-        <h2 className="text-4xl  text-gray-800">What we do</h2>
+        <h2 className="text-[36px]  text-gray-800">What we do</h2>
       </div>
 
       {/* Content Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto px-4 container ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8  mx-auto px-4 container text-[14px]">
         {/* Column 1 */}
         <div className="text-center">
           <h3 className="text-2xl  text-gray-800 mb-4">

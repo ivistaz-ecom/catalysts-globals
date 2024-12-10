@@ -1,11 +1,21 @@
 import React from "react"
-import {  corporatePartners,foundations,developments,social,universities,networks,bilaterals,multilaterals,government } from "@/app/utils/partners-data"
+import {
+  corporatePartners,
+  foundations,
+  developments,
+  social,
+  universities,
+  networks,
+  bilaterals,
+  multilaterals,
+  government,
+} from "@/app/utils/partners-data"
 
 const PartnersSection = () => {
   return (
-    <div className="bg-white py-8 pt-36">
+    <div className="bg-white py-4 pt-36">
       {/* Corporate Partners Section */}
-      <h2 className="text-3xl  text-center mb-6">Partners</h2>
+      <h2 className="text-[36px]  text-center mb-6">Partners</h2>
       <p className="text-left text-gray-600 mb-8 lg:px-16 px-4">
         We work with organisations at the local, national, regional and global
         levels. Our partners play a huge part in supporting the work we do,
@@ -13,8 +23,8 @@ const PartnersSection = () => {
         reinforce our work on impact programs across the breadth of themes we
         work on.
       </p>
-      <h2 className="lg:px-16 px-4 text-xl font-semibold">Corporates</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
+      <h2 className="lg:px-16 px-4 text-[22px]">Corporates</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {corporatePartners.map((partner, index) => (
           <div
             key={index}
@@ -30,8 +40,8 @@ const PartnersSection = () => {
       </div>
 
       {/* Foundations Section */}
-      <h2 className="lg:px-16 px-4 text-xl font-semibold">Foundations</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
+      <h2 className="lg:px-16 px-4 text-[22px]">Foundations</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {foundations.map((partner, index) => (
           <div
             key={index}
@@ -47,9 +57,9 @@ const PartnersSection = () => {
       </div>
 
       {/* Developments banks */}
-      <h2 className="lg:px-16 px-4 text-xl font-semibold">Developments banks</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { developments.map((partner, index) => (
+      <h2 className="lg:px-16 px-4 text-[22px]">Developments banks</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {developments.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
@@ -63,10 +73,12 @@ const PartnersSection = () => {
         ))}
       </div>
 
-       {/* Social Purpose Organisations / Impact Organisation */}
-       <h2 className="lg:px-16 px-4 text-xl font-semibold">Social Purpose Organisations / Impact Organisation</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { social.map((partner, index) => (
+      {/* Social Purpose Organisations / Impact Organisation */}
+      <h2 className="lg:px-16 px-4 text-[22px]">
+        Social Purpose Organisations / Impact Organisation
+      </h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {social.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
@@ -81,9 +93,9 @@ const PartnersSection = () => {
       </div>
 
       {/* Universities */}
-        <h2 className="lg:px-16 px-4 text-xl font-semibold">Universities</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { universities.map((partner, index) => (
+      <h2 className="lg:px-16 px-4 text-[22px]">Universities</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {universities.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
@@ -97,10 +109,10 @@ const PartnersSection = () => {
         ))}
       </div>
 
-        {/*Networks */}
-        <h2 className="lg:px-16 px-4 text-xl font-semibold">Networks</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { networks.map((partner, index) => (
+      {/*Networks */}
+      <h2 className="lg:px-16 px-4 text-[22px]">Networks</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {networks.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
@@ -114,10 +126,10 @@ const PartnersSection = () => {
         ))}
       </div>
 
-       {/*  Bilaterals */}
-       <h2 className="lg:px-16 px-4 text-xl font-semibold">Bilaterals</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { bilaterals.map((partner, index) => (
+      {/*  Bilaterals */}
+      <h2 className="lg:px-16 px-4 text-[22px]">Bilaterals</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {bilaterals.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
@@ -131,10 +143,10 @@ const PartnersSection = () => {
         ))}
       </div>
 
-         {/*  multilaterals */}
-         <h2 className="lg:px-16 px-4 text-xl font-semibold">Multi Laterals</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { multilaterals.map((partner, index) => (
+      {/*  multilaterals */}
+      <h2 className="lg:px-16 px-4 text-[22px]">Multi Laterals</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {multilaterals.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
@@ -149,9 +161,9 @@ const PartnersSection = () => {
       </div>
 
       {/*  multilaterals */}
-      <h2 className="lg:px-16 px-4 text-xl font-semibold">Government Agencies</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-8">
-        { government.map((partner, index) => (
+      <h2 className="lg:px-16 px-4 text-[22px]">Government Agencies</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
+        {government.map((partner, index) => (
           <div
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
