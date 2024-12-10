@@ -95,7 +95,7 @@ export default function SimpleSlider() {
             `}
       </style> */}
       <div className="flex flex-col justify-center items">
-        <div className="container mx-auto py-6">
+        <div className="container mx-auto py-6 px-4">
           <div className="flex flex-col gap-10 lg:px-0 px-5">
             <div>
               <p className="container mx-auto text-center text-[36px] ">

@@ -28,14 +28,14 @@ const Homepage = () => {
           width={1000}
           height={1000}
         />
-        <p className="text-white text-lg pt-5 w-full mx-auto leading-9 text-shadow-md">
+        <h1 className="text-white text-lg pt-5 w-full mx-auto leading-9 text-shadow-md">
           Catalyst Foundation is a social enterprise platform that seeks to
           promote health and wealth of vulnerable communities.
-        </p>
+        </h1>
         <div className="absolute bottom-10 w-full flex justify-center">
           <a
             href="/organisations"
-            className=" px-10 py-3 bg-[#1F2445] text-white text-[12px] font-medium rounded-full shadow-lg hover:bg-[#1F2445] hover:scale-105 transition-transform duration-300"
+            className=" px-10 py-3 bg-[#1F2445] text-white text-[12px] font-medium rounded-full shadow-lg "
           >
             FIND OUT MORE
           </a>

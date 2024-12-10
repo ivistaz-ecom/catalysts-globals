@@ -4,8 +4,8 @@ const Howbigarewe = () => {
   return (
     <section className="py-12 bg-white mx-auto container">
       <div className="text-center">
-        <h2 className="text-4xl  text-gray-800 mb-4">How Big Are We?</h2>
-        <p className="text-sm text-gray-600 max-w-3xl p-2 mx-auto">
+        <h2 className="text-4xl  text-gray-800 mb-4 px-4">How Big Are We?</h2>
+        <p className="text-sm text-gray-600 max-w-3xl  mx-auto px-4 pt-5">
           Philosophically and strategically, Catalyst Group would like to stay
           small and make a big impact. We are not focused on our size, rather
           the size of our contributions. Therefore we prefer to measure and be
@@ -13,7 +13,7 @@ const Howbigarewe = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12 text-center">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12 text-center px-4">
         {/* Team Section */}
         <div>
           <div className="flex justify-center">

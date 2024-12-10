@@ -4,7 +4,7 @@ import Link from "next/link"
 const Organisations = () => {
   return (
     <div>
-      <p className="text-[36px] text-center p-10 pt-36">Our Organisations</p>
+      <h1 className="text-[36px] text-center p-10 pt-36">Our Organisations</h1>
       <div className="flex flex-col md:flex-row items-stretch h-auto mt-[0.5px]">
         {/* Left Column - Logo */}
         <div className="w-full md:w-1/4 flex justify-center items-center bg-[#622F88] p-8">
@@ -77,7 +77,7 @@ const Organisations = () => {
 
         {/* Middle Column - Text */}
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
-          <h2 className="text-2xl ">Impact Catalyst Foundation (ICF)</h2>
+          <h3 className="text-2xl ">Impact Catalyst Foundation (ICF)</h3>
           <p className="text-xl ">(established in 1994)</p>
           <p className=" mt-4 text-[14px]">
             is a US public charity that is part of the Catalyst Group of
@@ -126,7 +126,7 @@ const Organisations = () => {
 
         {/* Middle Column - Text */}
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
-          <h2 className="text-2xl ">Swasti</h2>
+          <h3 className="text-2xl ">Swasti</h3>
           <p className="text-xl ">(established in 2004)</p>
           <p className=" mt-4 text-[14px]">
             A registered Society (not-for-profit), Swasti – The Health Catalyst
@@ -184,7 +184,7 @@ const Organisations = () => {
 
         {/* Middle Column - Text */}
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
-          <h2 className="text-2xl ">Vrutti</h2>
+          <h3 className="text-2xl ">Vrutti</h3>
           <p className="text-xl ">(established in 2002)</p>
           <p className=" mt-4 text-[14px]">
             A registered Society (not-for-profit), Vrutti is a Livelihood Impact
@@ -240,7 +240,7 @@ const Organisations = () => {
 
         {/* Middle Column - Text */}
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
-          <h2 className="text-2xl ">Fuzhio</h2>
+          <h3 className="text-2xl ">Fuzhio</h3>
           <p className="text-xl ">(established in 2005)</p>
           <p className=" mt-4 text-[14px]">
             Facilitating Market Access to Women and Smallholder Farmers and
@@ -289,7 +289,7 @@ const Organisations = () => {
 
         {/* Middle Column - Text */}
         <div className="w-full md:w-1/2 p-8 text-gray-700 bg-[#F7F5F9] flex flex-col justify-center ">
-          <h2 className="text-2xl ">Green Foundation</h2>
+          <h3 className="text-2xl ">Green Foundation</h3>
           <p className="text-xl ">(established in 1994)</p>
           <p className=" mt-4 text-[14px]">
             GREEN Foundation works toward a well-preserved, diverse ecosystem

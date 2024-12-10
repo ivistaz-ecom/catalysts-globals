@@ -33,7 +33,7 @@ export const slideData = [
       alt: "swasti",
       description:
         "A registered Society (not-for-profit), Swasti — The Health Catalyst — is a health resource centre.Which achieves public health outcomes for the marginalised, through the delivery of end-to-end solutions as well as short and long term support and facilitation,",
-      link: "https://cms.org.in/",
+      link: "https://swasti.org/",
     },
     {
       image: "/img/CMS.png",

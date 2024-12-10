@@ -35,7 +35,7 @@ export const Infograph = () => {
                 "url('http://catalysts.global/wp-content/themes/catalyst/img/circle.svg')",
             }}
           >
-            <p className="text-white text-[14px] leading-[22px] px-4 md:px-[50px] py-4 md:pt-[90px]">
+            <h2 className="text-white text-[14px] leading-[22px] px-4 md:px-[50px] py-4 md:pt-[90px]">
               Social inequities are growing and societal problems are complex.
               No single approach can deliver results at a scale. Sustainable
               change and transformation integrate the strength of the community,
@@ -44,7 +44,7 @@ export const Infograph = () => {
               education, etc., fundamental to social development, do not
               sufficiently focus or deliver outcomes for the poor and
               vulnerable.
-            </p>
+            </h2>
           </div>
         </div>
 

@@ -15,7 +15,7 @@ const PartnersSection = () => {
   return (
     <div className="bg-white py-4 pt-36">
       {/* Corporate Partners Section */}
-      <h2 className="text-[36px]  text-center mb-6">Partners</h2>
+      <h1 className="text-[36px]  text-center mb-6">Partners</h1>
       <p className="text-left text-gray-600 mb-8 lg:px-16 px-4">
         We work with organisations at the local, national, regional and global
         levels. Our partners play a huge part in supporting the work we do,
@@ -40,7 +40,7 @@ const PartnersSection = () => {
       </div>
 
       {/* Foundations Section */}
-      <h2 className="lg:px-16 px-4 text-[22px]">Foundations</h2>
+      <h3 className="lg:px-16 px-4 text-[22px]">Foundations</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {foundations.map((partner, index) => (
           <div
@@ -57,7 +57,7 @@ const PartnersSection = () => {
       </div>
 
       {/* Developments banks */}
-      <h2 className="lg:px-16 px-4 text-[22px]">Developments banks</h2>
+      <h3 className="lg:px-16 px-4 text-[22px]">Developments banks</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {developments.map((partner, index) => (
           <div
@@ -74,9 +74,9 @@ const PartnersSection = () => {
       </div>
 
       {/* Social Purpose Organisations / Impact Organisation */}
-      <h2 className="lg:px-16 px-4 text-[22px]">
+      <h3 className="lg:px-16 px-4 text-[22px]">
         Social Purpose Organisations / Impact Organisation
-      </h2>
+      </h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {social.map((partner, index) => (
           <div
@@ -93,7 +93,7 @@ const PartnersSection = () => {
       </div>
 
       {/* Universities */}
-      <h2 className="lg:px-16 px-4 text-[22px]">Universities</h2>
+      <h3 className="lg:px-16 px-4 text-[22px]">Universities</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {universities.map((partner, index) => (
           <div
@@ -127,7 +127,7 @@ const PartnersSection = () => {
       </div>
 
       {/*  Bilaterals */}
-      <h2 className="lg:px-16 px-4 text-[22px]">Bilaterals</h2>
+      <h3 className="lg:px-16 px-4 text-[22px]">Bilaterals</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {bilaterals.map((partner, index) => (
           <div
@@ -144,7 +144,7 @@ const PartnersSection = () => {
       </div>
 
       {/*  multilaterals */}
-      <h2 className="lg:px-16 px-4 text-[22px]">Multi Laterals</h2>
+      <h3 className="lg:px-16 px-4 text-[22px]">Multi Laterals</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {multilaterals.map((partner, index) => (
           <div
@@ -161,7 +161,7 @@ const PartnersSection = () => {
       </div>
 
       {/*  multilaterals */}
-      <h2 className="lg:px-16 px-4 text-[22px]">Government Agencies</h2>
+      <h3 className="lg:px-16 px-4 text-[22px]">Government Agencies</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 px-4 sm:px-8 md:px-16 py-4">
         {government.map((partner, index) => (
           <div
