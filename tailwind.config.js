@@ -11,7 +11,18 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textShadow: {
+        'md': '2px 2px rgb(0 0 0 / 45%)', // Custom text-shadow
+      },
     },
   },
-  plugins: [],
-};
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-shadow-md': {
+          textShadow: '2px 2px rgb(0 0 0 / 45%)',
+        },
+      })
+    },
+  ],
+}
