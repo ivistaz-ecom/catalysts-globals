@@ -58,7 +58,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-7 items-center justify-center container mx-auto text-[19.2px]">
+        <nav className="hidden md:flex space-x-11 items-center justify-center container mx-auto text-[19.2px]">
           {/* Second Logo - Hidden on Mobile */}
           <Link href="/" className="hidden md:block">
             <Image

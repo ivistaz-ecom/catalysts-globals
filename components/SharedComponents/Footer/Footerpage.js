@@ -4,7 +4,7 @@ const Contactus = () => {
   return (
     <>
     <div className="footer-contactus py-16 bg-[#E8E8EF]">
-      <div className="container mx-auto lg:px-6">
+      <div className="container mx-auto lg:px-2">
         <h3 className="text-[36px]  text-center mb-8">Contact Us</h3>
         <div className="flex flex-wrap ">
           <div className="w-full md:w-1/3 p-4">

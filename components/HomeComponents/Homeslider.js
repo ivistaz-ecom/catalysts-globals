@@ -12,19 +12,27 @@ const NextArrow = (props) => {
   const { className, style, onClick } = props
   return (
     <div
-      className={className}
+      className={`${className} absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-black rounded-full cursor-pointer`}
       style={{
         ...style,
-        display: "block",
-        backgroundColor: "black",
-        color: "black",
-        borderRadius: "50%",
-        width: "30px",
-        height: "30px",
-        padding: "6px",
       }}
       onClick={onClick}
-    />
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6 text-black"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </div>
   )
 }
 
@@ -32,19 +40,27 @@ const PrevArrow = (props) => {
   const { className, style, onClick } = props
   return (
     <div
-      className={className}
+      className={`${className} absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-black rounded-full cursor-pointer`}
       style={{
         ...style,
-        display: "block",
-        backgroundColor: "black",
-        color: "black",
-        borderRadius: "50%",
-        width: "30px",
-        height: "30px",
-        padding: "6px",
       }}
       onClick={onClick}
-    />
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-6 h-6 text-black"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M15 19l-7-7 7-7"
+        />
+      </svg>
+    </div>
   )
 }
 
@@ -80,20 +96,6 @@ export default function SimpleSlider() {
 
   return (
     <>
-      {/* <style>
-        {`
-            .slick-prev:before {
-                content: '←';
-                color: black;
-                font-size: 30px;
-            }
-            .slick-next:before {
-                content: '→';
-                color: black;
-                font-size: 30px;
-            }
-            `}
-      </style> */}
       <div className="flex flex-col justify-center items">
         <div className="container mx-auto py-6 px-4">
           <div className="flex flex-col gap-10 lg:px-0 px-5">
