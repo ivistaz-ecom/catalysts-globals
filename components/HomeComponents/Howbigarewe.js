@@ -25,7 +25,7 @@ const Howbigarewe = () => {
               height={1000}
             />
           </div>
-          <p className="text-xl font-medium text-gray-800">
+          <p className="text-[20px] lg:text-[26px] text-gray-800">
             We are a 480+ strong team...
           </p>
         </div>
@@ -41,7 +41,7 @@ const Howbigarewe = () => {
               height={1000}
             />
           </div>
-          <p className="text-xl font-medium text-gray-800">
+          <p className="text-[20px] lg:text-[26px] text-gray-800">
             ...with a Head Office in Bangalore...
           </p>
         </div>
@@ -57,7 +57,7 @@ const Howbigarewe = () => {
               height={1000}
             />
           </div>
-          <p className="text-xl font-medium text-gray-800">
+          <p className="text-[20px] lg:text-[26px] text-gray-800">
             ...regional offices in Delhi, and Bhopal...
           </p>
         </div>
@@ -73,7 +73,7 @@ const Howbigarewe = () => {
               height={1000}
             />
           </div>
-          <p className="text-xl font-medium text-gray-800">
+          <p className="text-[20px] lg:text-[26px] text-gray-800">
             ...with over 100+ partners across the globe.
           </p>
         </div>

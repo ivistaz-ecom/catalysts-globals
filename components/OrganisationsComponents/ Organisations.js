@@ -1,19 +1,17 @@
-'use client'
+"use client"
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
 import { organisations } from "@/app/utils/organisations.data"
 const Organisations = () => {
-  
-
   return (
     <div>
       <h1 className="text-[36px] text-center p-10 pt-36">Our Organisations</h1>
       {organisations.map((org, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row items-stretch h-auto mt-[0.5px]"
+          className="flex flex-col md:flex-row items-stretch h-auto border-b-[1px] lg:mb-0 mb-4"
         >
           {/* Left Column - Logo */}
           <div

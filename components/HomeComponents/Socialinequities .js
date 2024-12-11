@@ -35,7 +35,7 @@ export const Infograph = () => {
                 "url('http://catalysts.global/wp-content/themes/catalyst/img/circle.svg')",
             }}
           >
-            <h2 className="text-white text-[14px] leading-[22px] px-4 md:px-[50px] py-4 md:pt-[90px]">
+            <h2 className="text-white text-[14px] leading-[22px] px-4 md:px-[50px] py-4 md:pt-[90px] text-center">
               Social inequities are growing and societal problems are complex.
               No single approach can deliver results at a scale. Sustainable
               change and transformation integrate the strength of the community,
@@ -49,7 +49,7 @@ export const Infograph = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="block lg:hidden text-sm py-4">
+        <div className="block lg:hidden text-sm py-12 text-center">
           <p className="text-white">
             Social inequities are growing and societal problems are complex. No
             single approach can deliver results at a scale. Sustainable change

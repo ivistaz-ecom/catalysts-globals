@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header
-      className={`py-6 px-10 fixed w-full z-50 transition-colors duration-300 ${
+      className={`py-6 px-8 fixed w-full z-50 transition-colors duration-300 ${
         pathname === "/"
           ? isScrolled
             ? "bg-black text-white"
@@ -47,20 +47,9 @@ const Header = () => {
     >
       <div className="flex items-center justify-between">
         {/* First Logo - Hidden on Desktop */}
-        <Link href="/" className="block md:hidden">
-          <Image
-            src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
-            alt="Catalyst Foundation Logo"
-            width={200}
-            height={100}
-            className="w-auto h-auto"
-          />
-        </Link>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-11 items-center justify-center container mx-auto text-[19.2px]">
-          {/* Second Logo - Hidden on Mobile */}
-          <Link href="/" className="hidden md:block">
+        <div className="lg:ms-24">
+          {/* Mobile Logo */}
+          <Link href="/" className="block md:hidden">
             <Image
               src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
               alt="Catalyst Foundation Logo"
@@ -69,37 +58,57 @@ const Header = () => {
               className="w-auto h-auto"
             />
           </Link>
-          <Link href="/" className={linkClasses("/")}>
-            Home
-          </Link>
-          <Link href="/organisations" className={linkClasses("/organisations")}>
-            Organisations
-          </Link>
-          <Link href="/partners" className={linkClasses("/partners")}>
-            Partners
-          </Link>
 
-          <Link
-            href="https://communityactioncollab.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={linkClasses()}
-          >
-            Community Action Collab
+          {/* Desktop Logo */}
+          <Link href="/" className="hidden md:block">
+            <Image
+              src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
+              alt="Catalyst Foundation Logo"
+              width={200}
+              height={100}
+              className="w-[180px] h-auto"
+            />
           </Link>
-          <Link
-            href="https://iec.catalysts.global/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={linkClasses()}
-          >
-            Institutional Ethics Committee
-          </Link>
-        </nav>
+        </div>
+
+        {/* Navigation Section */}
+        <div className="px-20">
+          <nav className="hidden md:flex space-x-2 items-center justify-center container mx-auto text-[19.2px]">
+            <Link href="/" className={linkClasses("/")}>
+              Home
+            </Link>
+            <Link
+              href="/organisations"
+              className={linkClasses("/organisations")}
+            >
+              Organisations
+            </Link>
+            <Link href="/partners" className={linkClasses("/partners")}>
+              Partners
+            </Link>
+            <Link
+              href="https://communityactioncollab.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClasses()}
+            >
+              Community Action Collab
+            </Link>
+            <Link
+              href="https://iec.catalysts.global/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClasses()}
+            >
+              Institutional Ethics Committee
+            </Link>
+          </nav>
+        </div>
 
         {/* Mobile Menu Toggle */}
+
         <button
-          className="md:hidden focus:outline-none text-white"
+          className="md:hidden focus:outline-none text-white flex items-start justify-start"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -138,39 +147,41 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 w-full h-full bg-black transform ${
+          className={`fixed top-0 right-0 w-[260px] h-full bg-black transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out md:hidden`}
+          } transition-transform duration-300 ease-in-out md:hidden flex items-start justify-end`}
         >
-          <div className="p-4">
+          <div className="p-4 ">
             {/* Close Menu */}
-            <button
-              className="text-white"
-              onClick={toggleMenu}
-              aria-label="Close Menu"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <div className="flex justify-end items-end">
+              <button
+                className="text-white "
+                onClick={toggleMenu}
+                aria-label="Close Menu"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
 
             {/* Menu Links */}
-            <ul className="mt-8 space-y-6">
+            <ul className="mt-8 space-y-4">
               <li>
                 <Link
                   href="/"
-                  className={`block py-2 px-4 rounded ${
+                  className={`block py-1 px-4 rounded ${
                     pathname === "/" ? "text-red-500" : "text-white"
                   }`}
                   onClick={toggleMenu}
@@ -181,7 +192,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/organisations"
-                  className={`block py-2 px-4 rounded ${
+                  className={`block py-1 px-4 rounded ${
                     pathname === "/organisations"
                       ? "text-red-500"
                       : "text-white"
@@ -194,7 +205,7 @@ const Header = () => {
               <li>
                 <Link
                   href="/partners"
-                  className={`block py-2 px-4 rounded ${
+                  className={`block py-1 px-4 rounded ${
                     pathname === "/partners" ? "text-red-500" : "text-white"
                   }`}
                   onClick={toggleMenu}
@@ -208,7 +219,7 @@ const Header = () => {
                   href="https://communityactioncollab.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block py-2 px-4 text-white`}
+                  className={`block py-1 px-4 text-white`}
                   onClick={toggleMenu}
                 >
                   Community Action Collab
@@ -219,7 +230,7 @@ const Header = () => {
                   href="https://iec.catalysts.global/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block py-2 px-4 text-white`}
+                  className={`block py-1 px-4 text-white`}
                   onClick={toggleMenu}
                 >
                   Institutional Ethics Committee

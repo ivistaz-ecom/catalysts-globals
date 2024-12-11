@@ -29,9 +29,9 @@ const Ourconstituents = () => {
     
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-[14px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-[14px] ">
           {/* Card 1 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-lg rounded-lg h-36 border hover:shadow-lg">
             <p className="text-gray-700">
               Institutions founded and managed by the CF Trustees, referred to
               as the Catalyst Group, having formal Memorandum of Association
