@@ -1,6 +1,10 @@
 import React from "react"
 import Image from "next/image"
+
+const currentYear = new Date().getFullYear();
+
 const Contactus = () => {
+
   return (
     <>
       <div className="footer-contactus py-12 bg-[#E8E8EF]">
@@ -87,7 +91,7 @@ const Contactus = () => {
       </div>
       <div className="text-center bg-[#191D42] py-6 px-4 lg:px-1">
         <p className="text-white text-[12px]">
-          © 2024 Catalysts Foundation - All Rights Reserved | Terms & Conditions
+        © {currentYear}  Catalysts Foundation - All Rights Reserved | Terms & Conditions
           | Disclaimer
         </p>
       </div>
