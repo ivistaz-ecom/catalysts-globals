@@ -40,7 +40,7 @@ const Organisations = () => {
             ))}
             <Link
               href={org.link}
-              className="inline-block mt-6 px-4 py-2 md:w-1/4 w-1/2 text-center border border-black text-[#191D42] rounded-full underline"
+              className="inline-block mt-6 px-4 py-2 md:w-1/4 w-1/2 text-center border border-black text-[#191D42] rounded-full"
               target="_blank"
             >
               Visit Website

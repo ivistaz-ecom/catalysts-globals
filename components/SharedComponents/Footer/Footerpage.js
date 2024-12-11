@@ -29,7 +29,7 @@ const Contactus = () => {
                 </p>
                 <a
                   href="https://goo.gl/maps/SA4WkU1RBgkRcMnd8"
-                  className="text-black rounded-full bg-[#FFFFFF] px-5 py-3  underline border-black border "
+                  className="text-black rounded-full bg-[#FFFFFF] px-5 py-3   border-black border "
                   target="blank"
                 >
                   Get Directions
@@ -54,7 +54,7 @@ const Contactus = () => {
                 </p>
                 <a
                   href="https://goo.gl/maps/SeiB97CAc1vb267i8"
-                  className="text-black rounded-full bg-[#FFFFFF] px-5 py-3 underline border-black border "
+                  className="text-black rounded-full bg-[#FFFFFF] px-5 py-3  border-black border "
                   target="blank"
                 >
                   Get Directions
@@ -79,7 +79,7 @@ const Contactus = () => {
                 </p>
                 <a
                   href="https://goo.gl/maps/SeiB97CAc1vb267i8"
-                  className="text-black rounded-full bg-[#FFFFFF] px-5 py-3 underline border-black border "
+                  className="text-black rounded-full bg-[#FFFFFF] px-5 py-3  border-black border "
                   target="blank"
                 >
                   Get Directions
