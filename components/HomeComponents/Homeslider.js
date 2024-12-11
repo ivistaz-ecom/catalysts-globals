@@ -8,62 +8,6 @@ import Link from "next/link"
 
 import { slideData } from "@/app/utils/catalystorganisation-data"
 
-const NextArrow = (props) => {
-  const { className, style, onClick } = props
-  return (
-    <div
-      className={`${className} absolute top-1/2 right-0 transform -translate-y-1/2 p-2 bg-black rounded-full cursor-pointer`}
-      style={{
-        ...style,
-      }}
-      onClick={onClick}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-6 h-6 text-black"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </div>
-  )
-}
-
-const PrevArrow = (props) => {
-  const { className, style, onClick } = props
-  return (
-    <div
-      className={`${className} absolute top-1/2 left-0 transform -translate-y-1/2 p-2 bg-black rounded-full cursor-pointer`}
-      style={{
-        ...style,
-      }}
-      onClick={onClick}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-6 h-6 text-black"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-    </div>
-  )
-}
-
 export default function SimpleSlider() {
   const settings = {
     dots: false,
@@ -74,8 +18,8 @@ export default function SimpleSlider() {
     pauseOnHover: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    arrows: true,
+    
     responsive: [
       {
         breakpoint: 1024,
@@ -96,7 +40,17 @@ export default function SimpleSlider() {
 
   return (
     <>
-      <div className="flex flex-col justify-center items">
+    <style>
+      {
+        `
+        .slick-prev:before, .slick-next:before {
+          color: black;
+          font-size: 20px; 
+        }`
+      }
+
+    </style>
+      <div className="flex flex-col justify-center items bg-[#F3F3F5] pb-3">
         <div className="container mx-auto py-6 px-4">
           <div className="flex flex-col gap-10 lg:px-0 px-5">
             <div>
@@ -108,7 +62,7 @@ export default function SimpleSlider() {
               <Slider {...settings}>
                 {slideData.map((slide, index) => (
                   <div key={index} className="">
-                    <div className=" flex flex-col justify-between items-stretch gap-6 p-5 m-2 rounded-xl shadow-md shadow-gray-400 h-full">
+                    <div className=" flex flex-col justify-between items-stretch gap-6 p-5 m-2 rounded-xl shadow-md shadow-gray-400 min-h-[300px]">
                       {/* Image Div */}
                       <div className="flex justify-center">
                         <Image
