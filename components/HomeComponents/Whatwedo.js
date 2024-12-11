@@ -5,7 +5,7 @@ const WhatWeDo = () => {
     <section className="py-12  bg-white">
       {/* Title Section */}
       <div className="text-center mb-8">
-        <h2 className="text-[36px]  text-gray-800">What we do</h2>
+        <p className="text-[36px]  text-gray-800">What we do</p>
       </div>
 
       {/* Content Section */}
