@@ -33,6 +33,8 @@ const Header = () => {
     } hover:text-red-500`
   }
 
+  
+
   return (
     <header
       className={`py-6 px-8 fixed w-full z-50 transition-colors duration-300 ${
@@ -147,7 +149,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 w-[260px] h-full bg-black transform ${
+          className={`fixed top-0 right-0 w-[290px] h-full bg-black transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out md:hidden flex items-start justify-end`}
         >
