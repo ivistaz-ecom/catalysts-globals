@@ -8,7 +8,7 @@ export const organisations = [
       "A private limited organisation which specializes in providing consulting and professional services. CMS partners to create social impact, guaranteeing results through development solutions and investments. The organisation commits to sustainable development that leads to investments in ideas, individuals and institutions, creating shared value and maximizing social returns. CMS solutions range from Design (strategy and planning), Evidence (research, evaluation and insights), Monitoring (systems, accountability and performance), Learning systems (accretion and application).",
       "CMS bridges worlds by creating partnerships across a spectrum of development actors – communities and their institutions, program implementers/ practitioners, financiers, policy influencers, researchers, networks, coalitions and platforms",
     ],
-    link: "https://cms.org.in/",
+    link: "https://solvists.org/",
     rightImage: "/img/cms-image.jpg",
   },
   {
