@@ -1,24 +1,21 @@
 import React from "react"
 
-
 const Ourconstituents = () => {
   return (
-    <div className="pt-10 bg-[#F3F3F5] pb-10 ">
+    <div className="pt-10 bg-[#F3F3F5] pb-10">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center">
-          <h3 className="text-4xl  text-gray-800 mb-4">
-            Our Constituents
-          </h3>
-          </div>
-          <div>
-          <p className="text-lg text-gray-600  mx-auto mb-6 pt-5">
+          <h3 className="text-4xl text-gray-800 mb-4">Our Constituents</h3>
+        </div>
+        <div>
+          <p className="text-lg text-gray-600 mx-auto mb-6 pt-5">
             Our constituents are the practitioners, thinkers and investors who
             are vested in social development, are aligned to our vision and
             strategy and subscribe to the same values, beliefs and standards
             that we stand for.
           </p>
-          <p className="text-lg text-gray-600  mx-auto mb-8">
+          <p className="text-lg text-gray-600 mx-auto mb-8">
             These constituents as individuals or institutions are our partners.
             We define partnerships through a variety of formal and informal
             engagement mechanisms. We are vested in working with partners,
@@ -26,12 +23,11 @@ const Ourconstituents = () => {
             move towards their results. Partnership forms include:
           </p>
         </div>
-    
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-[14px] ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-[14px]">
           {/* Card 1 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36 border hover:shadow-lg">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Institutions founded and managed by the CF Trustees, referred to
               as the Catalyst Group, having formal Memorandum of Association
@@ -40,7 +36,7 @@ const Ourconstituents = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Institutions integrated, merged into the Catalyst Group entities
               or managed by the CF Trustees.
@@ -48,7 +44,7 @@ const Ourconstituents = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Institutions co-created with other partners where the governance
               and management is legally represented by a Catalyst Group entity.
@@ -56,7 +52,7 @@ const Ourconstituents = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Institutions co-created or co-driven, where governance and
               management is trust led.
@@ -64,7 +60,7 @@ const Ourconstituents = () => {
           </div>
 
           {/* Card 5 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Build, Operate and Transfer mechanisms where only management, and
               not governance is represented by a Catalyst Group entity.
@@ -72,7 +68,7 @@ const Ourconstituents = () => {
           </div>
 
           {/* Card 6 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Long-term, formal or trust-based support to institutions or
               initiatives.
@@ -80,14 +76,14 @@ const Ourconstituents = () => {
           </div>
 
           {/* Card 7 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Assignment or contract-based engagements.
             </p>
           </div>
 
           {/* Card 8 */}
-          <div className="p-6 bg-white shadow-lg rounded-lg h-36">
+          <div className="p-6 bg-white shadow-sm border h-36 hover:shadow-xl hover:border-gray-400 transition-all duration-300">
             <p className="text-gray-700">
               Are involved with us, and vice-versa, through voluntary
               association.
@@ -96,10 +92,6 @@ const Ourconstituents = () => {
         </div>
       </div>
     </div>
-
-    
-
-    
   )
 }
 
