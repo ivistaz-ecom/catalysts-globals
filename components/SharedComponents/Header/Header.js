@@ -125,7 +125,7 @@ const Header = () => {
           aria-label="Toggle Menu"
         >
           <i
-            className={`bi ${isMenuOpen ? "bi-x-lg" : "bi-list"} text-2xl`}
+            className={`bi ${isMenuOpen ? "bi-x-lg" : "bi-list"} text-4xl`}
           ></i>
         </button>
 
