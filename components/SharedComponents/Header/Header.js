@@ -9,31 +9,92 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev)
-  }
-
   useEffect(() => {
     if (pathname === "/") {
-      const handleScroll = () => {
-        setIsScrolled(window.scrollY > 5)
-      }
-
+      const handleScroll = () => setIsScrolled(window.scrollY > 5)
       window.addEventListener("scroll", handleScroll)
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll)
-      }
+      return () => window.removeEventListener("scroll", handleScroll)
     }
   }, [pathname])
 
-  const linkClasses = (path) => {
-    return `block py-2 px-4 rounded ${
+  // Prevent scrolling when the menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden")
+    } else {
+      document.body.classList.remove("overflow-hidden")
+    }
+    return () => document.body.classList.remove("overflow-hidden")
+  }, [isMenuOpen])
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Organisations", href: "/organisations" },
+    { name: "Partners", href: "/partners" },
+    {
+      name: "Community Action Collab",
+      href: "https://communityactioncollab.org/",
+      external: true,
+    },
+    {
+      name: "Institutional Ethics Committee",
+      href: "https://iec.catalysts.global/",
+      external: true,
+    },
+  ]
+
+  const linkClasses = (path) =>
+    `block py-2 px-4 rounded ${
       pathname === path ? "text-red-500" : "text-white"
     } hover:text-red-500`
-  }
 
-  
+  const HeaderLogo = () => (
+    <Link href="/">
+      <Image
+        src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
+        alt="Catalyst Foundation Logo"
+        width={200}
+        height={100}
+        className="w-auto h-auto md:w-[180px]"
+      />
+    </Link>
+  )
+
+  const NavLink = ({ href, name, external = false }) => (
+    <Link
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className={linkClasses(href)}
+      onClick={() => setIsMenuOpen(false)}
+    >
+      {name}
+    </Link>
+  )
+  const MobileMenu = () => (
+    <div
+      className={`fixed top-0 right-0 w-[290px] h-full bg-black transform ${
+        isMenuOpen ? "translate-x-0" : "translate-x-full"
+      } transition-transform duration-300 ease-in-out md:hidden`}
+    >
+      <div className="p-4 relative">
+        <button
+          className="text-white absolute top-4 right-4"
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="Close Menu"
+        >
+          <i className="bi bi-x-lg text-2xl"></i>
+        </button>
+        <ul className="mt-8 space-y-4">
+          {navItems.map(({ href, name, external }) => (
+            <li key={href}>
+              <NavLink href={href} name={name} external={external} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
 
   return (
     <header
@@ -48,199 +109,27 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center justify-between">
-        {/* First Logo - Hidden on Desktop */}
         <div className="lg:ms-24">
-          {/* Mobile Logo */}
-          <Link href="/" className="block md:hidden">
-            <Image
-              src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
-              alt="Catalyst Foundation Logo"
-              width={200}
-              height={100}
-              className="w-auto h-auto"
-            />
-          </Link>
-
-          {/* Desktop Logo */}
-          <Link href="/" className="hidden md:block">
-            <Image
-              src="/catalyst-global-logo.6f016a59c010e128e74a746ca04c226d.svg"
-              alt="Catalyst Foundation Logo"
-              width={200}
-              height={100}
-              className="w-[180px] h-auto"
-            />
-          </Link>
+          <HeaderLogo />
         </div>
 
-        {/* Navigation Section */}
-        <div className="px-20">
-          <nav className="hidden md:flex space-x-2 items-center justify-center container mx-auto text-[19.2px]">
-            <Link href="/" className={linkClasses("/")}>
-              Home
-            </Link>
-            <Link
-              href="/organisations"
-              className={linkClasses("/organisations")}
-            >
-              Organisations
-            </Link>
-            <Link href="/partners" className={linkClasses("/partners")}>
-              Partners
-            </Link>
-            <Link
-              href="https://communityactioncollab.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={linkClasses()}
-            >
-              Community Action Collab
-            </Link>
-            <Link
-              href="https://iec.catalysts.global/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={linkClasses()}
-            >
-              Institutional Ethics Committee
-            </Link>
-          </nav>
-        </div>
-
-        {/* Mobile Menu Toggle */}
+        <nav className="hidden md:flex space-x-2 items-center px-20 text-[19.2px] ">
+          {navItems.map(({ href, name, external }) => (
+            <NavLink key={href} href={href} name={name} external={external} />
+          ))}
+        </nav>
 
         <button
-          className="md:hidden focus:outline-none text-white flex items-start justify-start"
-          onClick={toggleMenu}
+          className="md:hidden focus:outline-none text-white"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
           aria-label="Toggle Menu"
         >
-          {isMenuOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
+          <i
+            className={`bi ${isMenuOpen ? "bi-x-lg" : "bi-list"} text-2xl`}
+          ></i>
         </button>
 
-        {/* Mobile Menu */}
-        <div
-          className={`fixed top-0 right-0 w-[290px] h-full bg-black transform ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          } transition-transform duration-300 ease-in-out md:hidden flex items-start justify-end`}
-        >
-          <div className="p-4 ">
-            {/* Close Menu */}
-            <div className="flex justify-end items-end">
-              <button
-                className="text-white "
-                onClick={toggleMenu}
-                aria-label="Close Menu"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* Menu Links */}
-            <ul className="mt-8 space-y-4">
-              <li>
-                <Link
-                  href="/"
-                  className={`block py-1 px-4 rounded ${
-                    pathname === "/" ? "text-red-500" : "text-white"
-                  }`}
-                  onClick={toggleMenu}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/organisations"
-                  className={`block py-1 px-4 rounded ${
-                    pathname === "/organisations"
-                      ? "text-red-500"
-                      : "text-white"
-                  }`}
-                  onClick={toggleMenu}
-                >
-                  Organisations
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/partners"
-                  className={`block py-1 px-4 rounded ${
-                    pathname === "/partners" ? "text-red-500" : "text-white"
-                  }`}
-                  onClick={toggleMenu}
-                >
-                  Partners
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="https://communityactioncollab.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block py-1 px-4 text-white`}
-                  onClick={toggleMenu}
-                >
-                  Community Action Collab
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://iec.catalysts.global/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block py-1 px-4 text-white`}
-                  onClick={toggleMenu}
-                >
-                  Institutional Ethics Committee
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        {isMenuOpen && <MobileMenu />}
       </div>
     </header>
   )
