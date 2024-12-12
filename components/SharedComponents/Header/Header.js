@@ -71,30 +71,6 @@ const Header = () => {
       {name}
     </Link>
   )
-  const MobileMenu = () => (
-    <div
-      className={`fixed top-0 right-0 w-[290px] h-full bg-black transform ${
-        isMenuOpen ? "translate-x-0" : "translate-x-full"
-      } transition-transform duration-300 ease-in-out md:hidden`}
-    >
-      <div className="p-4 relative">
-        <button
-          className="text-white absolute top-4 right-4"
-          onClick={() => setIsMenuOpen(false)}
-          aria-label="Close Menu"
-        >
-          <i className="bi bi-x-lg text-2xl"></i>
-        </button>
-        <ul className="mt-8 space-y-4">
-          {navItems.map(({ href, name, external }) => (
-            <li key={href}>
-              <NavLink href={href} name={name} external={external} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  )
 
   return (
     <header
@@ -113,14 +89,14 @@ const Header = () => {
           <HeaderLogo />
         </div>
 
-        <nav className="hidden md:flex space-x-2 items-center px-20 text-[19.2px] ">
+        <nav className="hidden md:flex space-x-2 items-center px-20 text-[19.2px]">
           {navItems.map(({ href, name, external }) => (
             <NavLink key={href} href={href} name={name} external={external} />
           ))}
         </nav>
 
         <button
-          className="md:hidden focus:outline-none text-white"
+          className="md:hidden focus:outline-none text-white "
           onClick={() => setIsMenuOpen((prev) => !prev)}
           aria-label="Toggle Menu"
         >
@@ -129,7 +105,37 @@ const Header = () => {
           ></i>
         </button>
 
-        {isMenuOpen && <MobileMenu />}
+        <div
+          className={`fixed inset-0 bg-black bg-opacity-50 md:hidden transition-opacity duration-300 ${
+            isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+
+        <div
+          className={`fixed top-0 right-0 w-[290px] h-full bg-black transform transition-transform duration-300 ease-in-out z-50 ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex justify-end items-center p-4 ">
+            <button
+              type="button"
+              className="text-white  "
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <i className="bi bi-x-lg text-2xl"></i>
+            </button>
+          </div>
+          <div className="p-4">
+            <ul className="space-y-4">
+              {navItems.map(({ href, name, external }) => (
+                <li key={href}>
+                  <NavLink href={href} name={name} external={external} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
   )
