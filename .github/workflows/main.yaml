@@ -21,4 +21,8 @@ jobs:
           script: |
             cd /home/react-staging/cg-new
             echo sudo -S git config --global --add safe.directory /home/react-staging/cg-new
+            echo sudo -S git pull origin main
+            echo sudo -S npm install
+            echo sudo -S npm run build
+            sudo -S pm2 status
    
