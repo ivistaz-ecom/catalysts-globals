@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy Live CG Staging
+      - name: Deploy to Live CG 
         uses: appleboy/ssh-action@master
 
         with:
