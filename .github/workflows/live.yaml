@@ -1,21 +1,19 @@
-name: Merge and Deploy to Live  
+name: Deploy to Live  
 
 on:
-  # push:
-    # branches: [main]
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch: # Manual trigger for deployment
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Live CG 
-        uses: appleboy/ssh-action@master
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.LIVE_HOST }} # Your server's IP address
-          username: ${{ secrets.LIVE_USERNAME }} # Your server's username
-          key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # Your server's SSH private key
-          
-          script: |
-            cd /home/react/cg-new/
+          host: ${{ secrets.LIVE_HOST }} # Server IP
+          username: ${{ secrets.LIVE_USERNAME }} # SSH username
+          key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # SSH private key
+         
