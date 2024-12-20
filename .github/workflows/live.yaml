@@ -1,7 +1,7 @@
-name: Build & Deploy Staging
+name: Build & Deploy Live
 
 on:
-  push:
+  # push:
     # branches: [main]
   workflow_dispatch: # Manual trigger
 
@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy Staging CG Staging
+      - name: Deploy Live CG Staging
         uses: appleboy/ssh-action@master
 
         with:
