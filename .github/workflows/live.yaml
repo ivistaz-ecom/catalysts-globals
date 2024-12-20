@@ -1,4 +1,4 @@
-name: Build & Deploy Live
+name: Merge and Deploy to Live  
 
 on:
   # push:
