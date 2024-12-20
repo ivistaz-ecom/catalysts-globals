@@ -17,3 +17,5 @@ jobs:
           username: ${{ secrets.LIVE_USERNAME }} # Your server's username
           key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # Your server's SSH private key
           
+          script: |
+            cd /home/react/cg-new/
