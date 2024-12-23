@@ -7,13 +7,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Deploy to Server
         uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.LIVE_HOST }} # Server IP
-          username: ${{ secrets.LIVE_USERNAME }} # SSH username
-          key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # SSH private key
+       
          
