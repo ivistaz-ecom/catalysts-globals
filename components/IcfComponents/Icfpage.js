@@ -132,7 +132,8 @@ const Icfpage = () => {
 
       {/* Content Section */}
       <div
-        className="relative z-10 flex flex-col items-center justify-center flex-1 px-3 py-7"
+
+        className="relative z-10 flex flex-col items-center justify-center flex-1 px-4 py-7"
         id="Icfpage"
       >
         <Image
