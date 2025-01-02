@@ -139,7 +139,7 @@ const Icfpage = () => {
         <Image
           src="/img/icf_logo_icon copy.svg"
           alt="Catalyst Foundation"
-          className="sm:w-1/6 w-1/2 h-auto mb-4 pt-3"
+          className="sm:w-1/6 w-1/2 h-auto mb-4 pt-4"
           width={1000}
           height={1000}
         />
