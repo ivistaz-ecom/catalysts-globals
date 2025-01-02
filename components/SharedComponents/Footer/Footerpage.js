@@ -74,7 +74,7 @@ const Contactus = () => {
               <div className="pt-6">
                 <h5 className="text-[24px]  font-medium mb-3">Bhopal</h5>
                 <p className="text-gray-700 mb-4">
-                  E-2/244, First Floor, Arera Colony, Bhopal, Madhya Pradesh,
+                  E-2/244, First Floor, Arera Colony, Bhopal, Madhya Pradesh, 
                   462016
                 </p>
                 <a
@@ -94,6 +94,7 @@ const Contactus = () => {
         © {currentYear}  Catalysts Foundation - All Rights Reserved | Terms & Conditions
           | Disclaimer
         </p>
+        
       </div>
     </>
   )
