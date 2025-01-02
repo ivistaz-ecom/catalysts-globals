@@ -8,7 +8,7 @@ export const organisations = [
       "A private limited organisation which specializes in providing consulting and professional services. CMS partners to create social impact, guaranteeing results through development solutions and investments. The organisation commits to sustainable development that leads to investments in ideas, individuals and institutions, creating shared value and maximizing social returns. CMS solutions range from Design (strategy and planning), Evidence (research, evaluation and insights), Monitoring (systems, accountability and performance), Learning systems (accretion and application).",
       "CMS bridges worlds by creating partnerships across a spectrum of development actors – communities and their institutions, program implementers/ practitioners, financiers, policy influencers, researchers, networks, coalitions and platforms",
     ],
-    link: "https://solvists.org/",
+    link: "https://cms.org.in/",
     rightImage: "/img/cms-image.jpg",
   },
   {
@@ -19,7 +19,7 @@ export const organisations = [
     description: [
       "is a US public charity that is part of the Catalyst Group of organisations, headquartered in India. The Catalyst Group was founded in 1994 and is a social enterprise platform focused on the promotion of the health and wealth of vulnerable communities. Our work has spanned over 25 countries across Asia and Africa in multiple domains, including health, livelihood, and climate change.",
     ],
-    link: "https://catalysts.global/impact-catalyst-foundation-icf",
+    link: "/impact-catalyst-foundation-icf",
     rightImage: "/img/build_synergies.png",
   },
   {
