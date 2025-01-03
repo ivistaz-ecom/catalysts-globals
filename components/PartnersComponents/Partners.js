@@ -10,6 +10,7 @@ import {
   multilaterals,
   government,
 } from "@/app/utils/partners-data"
+import Image from "next/image"
 
 const PartnersSection = () => {
   return (
@@ -30,10 +31,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`Corporate Partner ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -47,10 +50,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`foundation ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -64,10 +69,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`developments ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -83,10 +90,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`social ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -100,10 +109,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`universities ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -117,10 +128,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`networks ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -134,10 +147,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`bilaterals ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -151,10 +166,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`multilaterals ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}
@@ -168,10 +185,12 @@ const PartnersSection = () => {
             key={index}
             className="flex items-center justify-center border p-4 hover:shadow-lg"
           >
-            <img
+            <Image
               src={partner.img}
               alt={`government ${index + 1}`}
               className="max-h-24 object-contain"
+              width={1000}
+              height={1000}
             />
           </div>
         ))}

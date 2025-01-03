@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react"
 import { directors  } from "@/app/utils/ourteam.data"
+import Image from "next/image"
 
 const Ourteam = () => {
   const currentYear = new Date().getFullYear();
@@ -52,10 +53,12 @@ const Ourteam = () => {
           {directors.map((director, index) => (
             <div key={index} className="text-black p-6 text-sm">
               <div>
-                <img
+                <Image
                   src={director.image}
                   alt={director.name}
                   className="w-full mb-4"
+                  width={1000}
+                  height={1000}
                 />
                 <div className="h-40">
                   <h3 className="text-xl mb-2 text-white">{director.name}</h3>
@@ -96,10 +99,12 @@ const Ourteam = () => {
               }{" "}
               {/* Modal Title */}
             </h3>
-            <img
+            <Image
               src={modalImage}
               alt="Director"
               className="w-44 h-44 object-cover mb-4"
+              width={1000}
+              height={1000}
             />
            
             <p>{modalContent}</p>

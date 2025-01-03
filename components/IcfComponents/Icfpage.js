@@ -1,17 +1,17 @@
-import React, { useState } from "react"
-import Image from "next/image"
+import React, { useState } from "react";
+import Image from "next/image";
 
 const Icfpage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id) => {
-    const section = document.getElementById(id)
+    const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" })
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }
+  };
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <div
@@ -25,45 +25,47 @@ const Icfpage = () => {
       }}
     >
       {/* Menu Section */}
-      <div className="bg-black text-white w-full py-4 relative">
+      <div className="bg-black text-white w-full py-7 relative">
         <div className="flex justify-between items-center px-4 md:px-10">
+       
           {/* Hamburger Icon */}
           <button
-            onClick={toggleMenu}
-            className="text-white md:hidden focus:outline-none ml-auto"
-          >
-            {isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
+  onClick={toggleMenu}
+  className="text-white md:hidden focus:outline-none ml-auto"
+>
+  {isMenuOpen ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  ) : (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4 6h16M4 12h16m-7 6h7"
+      />
+    </svg>
+  )}
+</button>
+
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex justify-center space-x-6 md:space-x-14 text-sm md:text-base text-center w-full">
@@ -99,8 +101,8 @@ const Icfpage = () => {
           <div className="absolute top-full left-0 w-full bg-black z-50 flex flex-col items-center space-y-4 py-4 text-sm md:hidden">
             <a
               onClick={() => {
-                scrollToSection("Icfpage")
-                setIsMenuOpen(false)
+                scrollToSection("Icfpage");
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -108,8 +110,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("whoAreWe")
-                setIsMenuOpen(false)
+                scrollToSection("whoAreWe");
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -117,8 +119,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("WhereWeWork")
-                setIsMenuOpen(false)
+                scrollToSection("WhereWeWork");
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -126,8 +128,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("Ourteam")
-                setIsMenuOpen(false)
+                scrollToSection("Ourteam");
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -139,13 +141,14 @@ const Icfpage = () => {
 
       {/* Content Section */}
       <div
-        className="relative z-10 flex flex-col items-center justify-center flex-1 px-3 py-7"
+
+        className="relative z-10 flex flex-col items-center justify-center flex-1 px-4 py-7"
         id="Icfpage"
       >
         <Image
           src="/img/icf_logo_icon copy.svg"
           alt="Catalyst Foundation"
-          className="sm:w-1/6 w-1/2 h-auto mb-4 pt-4"
+          className="sm:w-1/6 w-1/2 h-auto mb-4 pt-3"
           width={1000}
           height={1000}
         />
@@ -171,7 +174,7 @@ const Icfpage = () => {
         </h3>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Icfpage
+export default Icfpage;

@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Link from "next/link";
 
 const currentYear = new Date().getFullYear();
 
@@ -27,13 +28,13 @@ const Contactus = () => {
                   No.25, AECS Layout, Ashwathnagar, Bengaluru - 560094,
                   Karnataka
                 </p>
-                <a
+                <Link
                   href="https://goo.gl/maps/SA4WkU1RBgkRcMnd8"
                   className="text-black rounded-full bg-[#FFFFFF] px-5 py-3   border-black border "
                   target="blank"
                 >
                   Get Directions
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/3 p-4">
@@ -52,13 +53,13 @@ const Contactus = () => {
                   Swasti Health Catalyst, A-10 (Second Floor), Green Park New
                   Delhi-110016
                 </p>
-                <a
+                <Link
                   href="https://goo.gl/maps/SeiB97CAc1vb267i8"
                   className="text-black rounded-full bg-[#FFFFFF] px-5 py-3  border-black border "
                   target="blank"
                 >
                   Get Directions
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-full md:w-1/3 p-4">
@@ -77,13 +78,13 @@ const Contactus = () => {
                   E-2/244, First Floor, Arera Colony, Bhopal, Madhya Pradesh, 
                   462016
                 </p>
-                <a
+                <Link
                   href="https://goo.gl/maps/SeiB97CAc1vb267i8"
                   className="text-black rounded-full bg-[#FFFFFF] px-5 py-3  border-black border "
                   target="blank"
                 >
                   Get Directions
-                </a>
+                </Link>
               </div>
             </div>
           </div>

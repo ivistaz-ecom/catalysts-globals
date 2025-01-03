@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const Homepage = () => {
   return (
     <div
@@ -26,12 +26,12 @@ const Homepage = () => {
           promote health and wealth of vulnerable communities.
         </h1>
         <div className="absolute bottom-10 w-full flex justify-center">
-          <a
+          <Link
             href="/organisations"
             className="px-10 py-3 bg-[#1F2445] text-white text-[12px] font-medium rounded-full shadow-lg"
           >
             FIND OUT MORE
-          </a>
+          </Link>
         </div>
       </div>
     </div>

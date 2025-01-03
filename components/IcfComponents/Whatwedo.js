@@ -1,14 +1,15 @@
 "use client"
-import React, { useRef } from "react";
+import React, { useRef } from "react"
+import Image from "next/image"
 
 const WhatWeDo = () => {
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
+    const section = document.getElementById(id)
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      section.scrollIntoView({ behavior: "smooth", block: "start" })
     }
-  };
-  
+  }
+
   const items = [
     {
       title: "Thought Leadership",
@@ -37,8 +38,8 @@ const WhatWeDo = () => {
   ]
 
   return (
-    <div  className="container mx-auto px-4 py-8 max-w-6xl"  id="whoAreWe" >
-      <h2  className="text-center text-4xl  mb-8 text-[36px] ">What We Do</h2>
+    <div className="container mx-auto px-4 py-8 max-w-6xl" id="whoAreWe">
+      <h2 className="text-center text-4xl  mb-8 text-[36px] ">What We Do</h2>
       <p className="text-center text-lg mb-12">
         The common threads across all our work, be it on health, climate,
         livelihoods, or social protection, have been:
@@ -53,7 +54,13 @@ const WhatWeDo = () => {
           >
             {/* Image Section */}
             <div className="">
-              <img src={item.image} alt={item.alt} className="w-full" />
+              <Image
+                src={item.image}
+                alt={item.alt}
+                className="w-96"
+                width={1000}
+                height={1000}
+              />
             </div>
             {/* Text Section */}
             <div className=" px-4 w-full pt-4">
@@ -69,9 +76,11 @@ const WhatWeDo = () => {
         attention of our global stakeholders, be they foundations and other
         donors, governments, or diaspora populations.
       </p>
-      <p className="text-start text-lg px-3 ">Through our existing work and collaborations, ICF will impact the health and wealth of vulnerable communities globally.</p>
+      <p className="text-start text-lg px-3 ">
+        Through our existing work and collaborations, ICF will impact the health
+        and wealth of vulnerable communities globally.
+      </p>
     </div>
- 
   )
 }
 
