@@ -74,7 +74,7 @@ const Header = () => {
 
   return (
     <header
-      className={`py-6 px-8 fixed w-full z-50 transition-colors duration-300 ${
+      className={`py-6 px-8 fixed w-full  z-50 transition-colors duration-300 ${
         pathname === "/"
           ? isScrolled
             ? "bg-black text-white"
@@ -89,14 +89,14 @@ const Header = () => {
           <HeaderLogo />
         </div>
 
-        <nav className="hidden md:flex space-x-2 items-center px-20 text-[19.2px]">
+        <nav className="hidden xl:flex space-x-2 items-center justify-center gap-3 text-[19.2px] mx-auto">
           {navItems.map(({ href, name, external }) => (
             <NavLink key={href} href={href} name={name} external={external} />
           ))}
         </nav>
 
         <button
-          className="md:hidden focus:outline-none text-white "
+          className="xl:hidden focus:outline-none text-white "
           onClick={() => setIsMenuOpen((prev) => !prev)}
           aria-label="Toggle Menu"
         >
@@ -127,7 +127,7 @@ const Header = () => {
             </button>
           </div>
           <div className="p-4">
-            <ul className="space-y-4">
+            <ul className="lg:space-y-4">
               {navItems.map(({ href, name, external }) => (
                 <li key={href}>
                   <NavLink href={href} name={name} external={external} />
