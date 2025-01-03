@@ -1,17 +1,19 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState } from "react"
+import Image from "next/image"
 
 const Icfpage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
+  const scrollToSection = (id, offset = 0) => {
+    const section = document.getElementById(id)
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" });
+      const sectionTop =
+        section.getBoundingClientRect().top + window.scrollY + offset
+      window.scrollTo({ top: sectionTop, behavior: "smooth" })
     }
-  };
+  }
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
     <div
@@ -25,71 +27,68 @@ const Icfpage = () => {
       }}
     >
       {/* Menu Section */}
-      <div className="bg-black text-white w-full py-7 relative">
+      <div className="bg-black text-white w-full py-2  sm:py-10 fixed z-50">
         <div className="flex justify-between items-center px-4 md:px-10">
-       
           {/* Hamburger Icon */}
           <button
-  onClick={toggleMenu}
-  className="text-white md:hidden focus:outline-none ml-auto"
->
-  {isMenuOpen ? (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="2"
-      stroke="currentColor"
-      className="w-8 h-8"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M6 18L18 6M6 6l12 12"
-      />
-    </svg>
-  ) : (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="2"
-      stroke="currentColor"
-      className="w-8 h-8"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M4 6h16M4 12h16M4 18h16"  // Ensures three lines are visible
-      />
-    </svg>
-  )}
-</button>
-
-
+            onClick={toggleMenu}
+            className="text-white md:hidden focus:outline-none ml-auto"
+          >
+            {isMenuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex justify-center space-x-6 md:space-x-14 text-sm md:text-base text-center w-full">
             <a
-              onClick={() => scrollToSection("Icfpage")}
+              onClick={() => scrollToSection("Icfpage", -50)}
               className="cursor-pointer"
             >
               WHO ARE WE
             </a>
             <a
-              onClick={() => scrollToSection("whoAreWe")}
+              onClick={() => scrollToSection("whoAreWe", -50)}
               className="cursor-pointer"
             >
               WHAT WE DO
             </a>
             <a
-              onClick={() => scrollToSection("WhereWeWork")}
+              onClick={() => scrollToSection("WhereWeWork", -50)}
               className="cursor-pointer"
             >
               WHERE WE WORK
             </a>
             <a
-              onClick={() => scrollToSection("Ourteam")}
+              onClick={() => scrollToSection("Ourteam", -50)}
               className="cursor-pointer"
             >
               OUR TEAM
@@ -99,11 +98,11 @@ const Icfpage = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-black z-50 flex flex-col items-center space-y-4 py-4 text-sm md:hidden">
+          <div className="absolute top-full left-0 w-full bg-black z-50 flex flex-col items-center space-y-4 pb-2 text-sm md:hidden">
             <a
               onClick={() => {
-                scrollToSection("Icfpage");
-                setIsMenuOpen(false);
+                scrollToSection("Icfpage", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -111,8 +110,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("whoAreWe");
-                setIsMenuOpen(false);
+                scrollToSection("whoAreWe", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -120,8 +119,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("WhereWeWork");
-                setIsMenuOpen(false);
+                scrollToSection("WhereWeWork", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -129,8 +128,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("Ourteam");
-                setIsMenuOpen(false);
+                scrollToSection("Ourteam", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -142,8 +141,7 @@ const Icfpage = () => {
 
       {/* Content Section */}
       <div
-
-        className="relative z-10 flex flex-col items-center justify-center flex-1 px-4 py-7"
+        className="relative z-10 flex flex-col items-center justify-center flex-1 px-4 pt-14 "
         id="Icfpage"
       >
         <Image
@@ -162,7 +160,7 @@ const Icfpage = () => {
           Africa in multiple domains, including health, livelihood, and climate
           change.
         </h1>
-        <h3 className="text-white text-lg pt-5 w-full lg:mx-auto lg:leading-9 text-shadow-md lg:px-44">
+        <h3 className="text-white text-lg pt-5 w-full lg:mx-auto lg:leading-9 text-shadow-md lg:px-44 mb-4">
           ICF USA functions as a global platform for the Catalyst Group to
           engage more effectively with our partners while bringing critical
           development issues to the forefront of key decision-makers. We work
@@ -175,7 +173,7 @@ const Icfpage = () => {
         </h3>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Icfpage;
+export default Icfpage

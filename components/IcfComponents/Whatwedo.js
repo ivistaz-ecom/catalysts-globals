@@ -38,48 +38,51 @@ const WhatWeDo = () => {
   ]
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-6xl" id="whoAreWe">
-      <h2 className="text-center text-4xl  mb-8 text-[36px] ">What We Do</h2>
-      <p className="text-center text-lg mb-12">
-        The common threads across all our work, be it on health, climate,
-        livelihoods, or social protection, have been:
-      </p>
+    <div id="whoAreWe"  >
+      
+      <div className="container mx-auto px-4 py-8 max-w-6xl ">
+        <h2 className="text-center text-4xl  mb-8 text-[36px] mt-10">What We Do</h2>
+        <p className="text-center text-lg mb-12">
+          The common threads across all our work, be it on health, climate,
+          livelihoods, or social protection, have been:
+        </p>
 
-      {items.map((item, index) => (
-        <div className="" key={index}>
-          <div
-            className={`flex flex-col md:flex-row items-center justify-center mb-12 ${
-              item.reverse ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Image Section */}
-            <div className="">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                className="w-96"
-                width={1000}
-                height={1000}
-              />
-            </div>
-            {/* Text Section */}
-            <div className=" px-4 w-full pt-4">
-              <h3 className="text-2xl  mb-4">{item.title}</h3>
-              <p className="text-lg text-gray-700">{item.description}</p>
+        {items.map((item, index) => (
+          <div className="" key={index}>
+            <div
+              className={`flex flex-col md:flex-row items-center justify-center mb-12 ${
+                item.reverse ? "md:flex-row-reverse" : ""
+              }`}
+            >
+              {/* Image Section */}
+              <div className="">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  className="w-96"
+                  width={1000}
+                  height={1000}
+                />
+              </div>
+              {/* Text Section */}
+              <div className=" px-4 w-full pt-4">
+                <h3 className="text-2xl  mb-4">{item.title}</h3>
+                <p className="text-lg text-gray-700">{item.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
 
-      <p className=" text-lg mb-3 text-start px-3">
-        ICF strives to bring this thought leadership and impact creation to the
-        attention of our global stakeholders, be they foundations and other
-        donors, governments, or diaspora populations.
-      </p>
-      <p className="text-start text-lg px-3 ">
-        Through our existing work and collaborations, ICF will impact the health
-        and wealth of vulnerable communities globally.
-      </p>
+        <p className=" text-lg mb-3 text-start px-3">
+          ICF strives to bring this thought leadership and impact creation to
+          the attention of our global stakeholders, be they foundations and
+          other donors, governments, or diaspora populations.
+        </p>
+        <p className="text-start text-lg px-3 ">
+          Through our existing work and collaborations, ICF will impact the
+          health and wealth of vulnerable communities globally.
+        </p>
+      </div>
     </div>
   )
 }
