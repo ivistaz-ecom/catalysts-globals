@@ -74,16 +74,16 @@ const Header = () => {
 
   return (
     <header
-      className={`py-6 px-8 fixed w-full  z-50 transition-colors duration-300 ${
-        pathname === "/"
-          ? isScrolled
-            ? "bg-black text-white"
-            : "bg-transparent text-black"
-          : pathname === "/organisations" || pathname === "/partners"
+    className={`py-6 px-8 fixed w-full z-50 transition-colors duration-300 ${
+      pathname === "/"
+        ? isScrolled
           ? "bg-black text-white"
-          : "bg-white text-black"
-      }`}
-    >
+          : "bg-transparent text-black"
+        : pathname === "/organisations" || pathname === "/partners" || pathname === "/404"
+        ? "bg-black text-white"
+        : "bg-black text-black"
+    }`}
+  >
       <div className="flex items-center justify-between">
         <div className="lg:ms-24">
           <HeaderLogo />
