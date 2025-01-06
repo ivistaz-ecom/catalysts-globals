@@ -70,7 +70,7 @@ const UpfrontBlock = () => {
                     <li>3,47,481 Street vendors</li>
                   </ul>
                 </div>
-              </div>
+              </div><br /><br />
               <h2 className="md:text-[32px] text-[22px] bg-[#E0343D] text-white p-1 inline-block ">
                 Approaches and Methods
               </h2>

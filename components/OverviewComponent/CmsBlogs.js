@@ -48,7 +48,7 @@ const CmsBlock = () => {
                   className="text-blue-600"
                 >
                   CMS
-                </Link>
+                </Link>&nbsp;
                 specialises in solving problems with change agents through
                 effective actions and growth solutions for scale, impact, and
                 sustainability. We are a global powerhouse that accelerates the
@@ -56,7 +56,7 @@ const CmsBlock = () => {
                 SDGs.
               </p>
               <p className="mt-8 mb-8">
-                At{" "}
+                At&nbsp;
                 <Link
                   href="https://solvists.org"
                   target="_blank"

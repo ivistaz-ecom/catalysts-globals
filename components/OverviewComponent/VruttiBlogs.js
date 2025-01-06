@@ -33,7 +33,7 @@ const VruttiBlock = () => {
           <div className="bg-white px-4 py-8 mt-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div>
-              <h2 className="md:text-[32px] text-[22px] bg-[#E3B45F]  p-1 inline-block ">Livelihood Impact Partner</h2>
+              <h2 className="md:text-[32px] text-[22px] bg-[#E3B45F]  p-1 inline-block ">Livelihood Impact Partner</h2><br />
                 <br />
                 <p>
                   <Link
@@ -44,7 +44,7 @@ const VruttiBlock = () => {
                   >
                     Vrutti
                   </Link>
-                  is a centre for sustainable livelihoods and enhancing people&apos;s
+                  &nbsp;is a centre for sustainable livelihoods and enhancing people&apos;s
                   well-being through knowledge, innovation and transformative
                   actions.
                 </p>
@@ -53,7 +53,7 @@ const VruttiBlock = () => {
                 <br />
                 <br />
                 <h2 className="md:text-[32px] text-[22px] bg-[#E3B45F]  p-1 inline-block ">Direct Reach:</h2>
-                <br />
+                <br /><br />
                 <ul className="list-disc pl-5">
                   <li>
                     53,500 smallholder producers; current year (2021-22) 42,500

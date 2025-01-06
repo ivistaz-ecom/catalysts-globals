@@ -46,7 +46,7 @@ const CACollab = () => {
                 addresses issues affecting millions of vulnerable people and
                 ensures these individuals have access to vital livelihood,
                 health, social protection, and climate impact solutions.
-              </p>
+              </p><br />
               <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8]  p-1 inline-block ">Estd. 2022</h2><br/><br/>
               <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8]  p-1 inline-block ">Our Reach:</h2>
               <ul className="mt-4 space-y-4">

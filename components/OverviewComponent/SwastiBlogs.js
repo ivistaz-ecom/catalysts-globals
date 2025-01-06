@@ -43,7 +43,7 @@ const SwastiBlock = () => {
                 >
                   Swasti
                 </Link>
-                focuses on empowering people and communities, particularly the poor and marginalized, to make the right choices and lead healthy lives.
+                &nbsp;focuses on empowering people and communities, particularly the poor and marginalized, to make the right choices and lead healthy lives.
               </p>
               <p className="mt-4">
                 We integrate the capacities of people and their institutions, thematic expertise, and cross-sectoral collaborations. We aim to make everyday well-being real for the most poor and marginalized communities.
@@ -53,7 +53,7 @@ const SwastiBlock = () => {
               <br />
               <br />
               <h2 className="md:text-[32px] text-[22px] bg-[#FED8E4]  p-1 inline-block ">Direct Reach:</h2>
-              <br />
+              <br /><br />
               <p>400,000+ poor and vulnerable people in India and 29 other countries</p>
             </div>
             <div>

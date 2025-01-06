@@ -45,7 +45,7 @@ const GreenFnBlock = () => {
                   >
                     GREEN Foundation
                   </Link>
-                  works towards building a well-preserved ecosystem diversity
+                  &nbsp;works towards building a well-preserved ecosystem diversity
                   for the sustainable rural livelihoods of the present
                   generation without eroding the resource base of the future.
                 </p>
@@ -59,7 +59,7 @@ const GreenFnBlock = () => {
                 <h2 className="md:text-[32px] text-[22px] bg-[#FED590]  p-1 inline-block ">Est. 1994</h2>
                 <br />
                 <br />
-                <h2 className="md:text-[32px] text-[22px] bg-[#FED590]  p-1 inline-block ">Direct Reach:</h2>
+                <h2 className="md:text-[32px] text-[22px] bg-[#FED590]  p-1 inline-block ">Direct Reach:</h2><br /><br />
                 <ul className="list-disc pl-5">
                   <li>2,400 women farmers (about 10,000 people)</li>
                   <li>14 enterprise groups</li>
