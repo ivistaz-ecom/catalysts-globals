@@ -15,9 +15,9 @@ export const organisations = [
     bgColor: "linear-gradient(to right, #ae2e6c, #2d356a, #8a7a2a)",
     logoSrc: "/img/cat1.png",
     name: "Impact Catalyst Foundation (ICF)",
-    year: "(established in 1994)",
+    year: "(established in 2021)",
     description: [
-      "is a US public charity that is part of the Catalyst Group of organisations, headquartered in India. The Catalyst Group was founded in 1994 and is a social enterprise platform focused on the promotion of the health and wealth of vulnerable communities. Our work has spanned over 25 countries across Asia and Africa in multiple domains, including health, livelihood, and climate change.",
+      "is a US public charity that is part of the Catalyst Group of organisations, headquartered in India. The Catalyst Group was founded in 2021 and is a social enterprise platform focused on the promotion of the health and wealth of vulnerable communities. Our work has spanned over 25 countries across Asia and Africa in multiple domains, including health, livelihood, and climate change.",
     ],
     link: "/impact-catalyst-foundation-icf",
     rightImage: "/img/build_synergies.png",

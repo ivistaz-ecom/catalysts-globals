@@ -1,20 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+import React, { useState, useEffect, useRef } from "react"
+import Image from "next/image"
 
 const Icfpage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const menuRef = useRef(null)
 
   const scrollToSection = (id, offset = 0) => {
-    const section = document.getElementById(id);
+    const section = document.getElementById(id)
     if (section) {
       const sectionTop =
-        section.getBoundingClientRect().top + window.scrollY + offset;
-      window.scrollTo({ top: sectionTop, behavior: "smooth" });
+        section.getBoundingClientRect().top + window.scrollY + offset
+      window.scrollTo({ top: sectionTop, behavior: "smooth" })
     }
-  };
+  }
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -23,22 +23,22 @@ const Icfpage = () => {
         menuRef.current &&
         !menuRef.current.contains(event.target)
       ) {
-        setIsMenuOpen(false);
+        setIsMenuOpen(false)
       }
-    };
+    }
 
     if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-      document.addEventListener("mousedown", handleOutsideClick);
+      document.body.style.overflow = "hidden"
+      document.addEventListener("mousedown", handleOutsideClick)
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = "auto"
     }
 
     return () => {
-      document.body.style.overflow = "auto";
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, [isMenuOpen]);
+      document.body.style.overflow = "auto"
+      document.removeEventListener("mousedown", handleOutsideClick)
+    }
+  }, [isMenuOpen])
 
   return (
     <div
@@ -93,7 +93,7 @@ const Icfpage = () => {
           </button>
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex justify-center space-x-6 md:space-x-14 text-sm md:text-base text-center w-full">
+          <nav className="hidden md:flex justify-center items-center space-x-6 md:space-x-14 text-sm md:text-base text-center w-full">
             <a
               onClick={() => scrollToSection("Icfpage", -50)}
               className="cursor-pointer"
@@ -118,6 +118,12 @@ const Icfpage = () => {
             >
               OUR TEAM
             </a>
+            <a
+              href="/overview"
+              className="cursor-pointer bg-[#4F3475] text-white px-4 py-2 rounded-md hover:bg-[#3A2555] transition-colors duration-300"
+            >
+              Contact Us
+            </a>
           </nav>
         </div>
 
@@ -129,8 +135,8 @@ const Icfpage = () => {
           >
             <a
               onClick={() => {
-                scrollToSection("Icfpage", -50);
-                setIsMenuOpen(false);
+                scrollToSection("Icfpage", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -138,8 +144,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("whoAreWe", -50);
-                setIsMenuOpen(false);
+                scrollToSection("whoAreWe", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -147,8 +153,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("WhereWeWork", -50);
-                setIsMenuOpen(false);
+                scrollToSection("WhereWeWork", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
@@ -156,12 +162,18 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("Ourteam", -50);
-                setIsMenuOpen(false);
+                scrollToSection("Ourteam", -50)
+                setIsMenuOpen(false)
               }}
               className="cursor-pointer"
             >
               OUR TEAM
+            </a>
+            <a
+              href="/overview"
+              className="cursor-pointer bg-[#4F3475] text-white px-4 py-2 rounded-md hover:bg-[#3A2555] transition-colors duration-300"
+            >
+              Contact Us
             </a>
           </div>
         )}
@@ -201,7 +213,7 @@ const Icfpage = () => {
         </h3>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Icfpage;
+export default Icfpage

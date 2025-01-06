@@ -5,6 +5,8 @@ import "./globals.css";
 import Script from "next/script";
 import Header from "../components/SharedComponents/Header";
 import Footer from "../components/SharedComponents/Footer";
+import 'tailwindcss/tailwind.css';
+
 
 // const inter = Inter({ subsets: ["latin"] });
 

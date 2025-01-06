@@ -9,6 +9,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
 
+  // Handle scroll event for homepage only
   useEffect(() => {
     if (pathname === "/") {
       const handleScroll = () => setIsScrolled(window.scrollY > 5)
@@ -26,6 +27,11 @@ const Header = () => {
     }
     return () => document.body.classList.remove("overflow-hidden")
   }, [isMenuOpen])
+
+  // Do not show the header on the `/overview` page
+  if (pathname === "/overview") {
+    return null
+  }
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -74,16 +80,16 @@ const Header = () => {
 
   return (
     <header
-    className={`py-6 px-8 fixed w-full z-50 transition-colors duration-300 ${
-      pathname === "/"
-        ? isScrolled
+      className={`py-6 px-8 fixed w-full z-50 transition-colors duration-300 ${
+        pathname === "/"
+          ? isScrolled
+            ? "bg-black text-white"
+            : "bg-transparent text-black"
+          : pathname === "/organisations" || pathname === "/partners" || pathname === "/404"
           ? "bg-black text-white"
-          : "bg-transparent text-black"
-        : pathname === "/organisations" || pathname === "/partners" || pathname === "/404"
-        ? "bg-black text-white"
-        : "bg-black text-black"
-    }`}
-  >
+          : "bg-black text-black"
+      }`}
+    >
       <div className="flex items-center justify-between">
         <div className="lg:ms-24">
           <HeaderLogo />

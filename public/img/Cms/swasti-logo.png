@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="en" style="display: block;">
+
+<head>
+  <title>Swasti | Public Health Platform in India</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Swasti | Public Health Platform in India">
+  <meta name="description" content="Swasti: A leading public health organization in India empowering vulnerable communities for public health. Working in the domains of gender and equity, workforce wellbeing, and more through locally-driven sustainable initiatives.">
+
+  <link rel="stylesheet" href="https://use.typekit.net/dnp3xwm.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://swasti.org//assets/front_end/image/image.png">
+  <link rel="stylesheet" href="https://swasti.org/assets/front_end/css/style.css">
+  <link rel="stylesheet" href="https://swasti.org/assets/front_end/css/media.css">
+  <link rel="stylesheet" href="https://swasti.org/assets/flipbook/css/flipbook.style.css">
+  <link rel="stylesheet" href="https://swasti.org/assets/front_end/css/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/043e19fd45.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sharect@2.0.0/dist/sharect.js"></script> 
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://swasti.org/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://swasti.org/assets/js/phc.js"></script> 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJYR3DB5NW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LJYR3DB5NW');
+    </script>
+    <style>
+        P::selection
+{
+    background:#fae88e;
+}
+h1::selection
+{
+    background:#fae88e;
+}
+.form-control, -ms-input-placeholder {
+        background-color: #f8f9fa;
+        border: #1a1a1a;
+        font-size: 15px;
+        color: #333333;
+        opacity: 182%;
+        margin-bottom: 10px;
+    }
+    .heading2 {
+    background-color: #ffeaf1;
+    color: #ec0c6e;
+    opacity: 182%;
+    margin-top: 20px;
+    text-align: center;
+}
+.form-data
+{
+  border: #1a1a1a;
+  border-color: #ec0c6e;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ec0c6e;
+    border-color: #ec0c6e;
+}
+.ideas-data
+{
+  background-color: #ffeaf1;  width: 50%;
+            float: left;
+            padding: 20px;
+}
+.campaign-data
+{
+  background-color: #ffeaf1;  width: 50%;
+            float: left;
+            padding: 20px;
+}
+.ideas-campaign-data
+{
+  background-color: #ffeaf1;
+}
+.time{
+  font-size: 9px !important
+}
+.socials i
+{
+  margin-right: 14px;
+  font-size: 17px;
+  color: #d2c8c8;
+  cursor: pointer
+}
+.feed-image img
+{
+  width: 100%;
+  height: auto
+}
+.example .inside {
+ 
+    border: 20px solid #fff;
+}
+.example
+{
+  background-color: white;
+}
+
+.carousel-multi{
+  .carousel-inner{
+    > .carousel-item{
+      transition: 500ms ease-in-out left;
+      
+      > .media-card{
+        background: #333 !important;
+        border-right: 10px solid #fff !important;
+        display: table-cell !important;
+        width: 30% !important;
+
+        &:last-of-type{
+          border-right: none !important;
+        }
+      }
+    }
+    .active{
+      display: table;
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .carousel-item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out all !important;
+        backface-visibility: visible !important;
+        transform: none!important;
+      }
+    }
+  }
+}
+    </style>
+</head>
+<script>
+  $(document).ready(function () {
+      // Check if the current URL matches the specified pattern
+      if (window.location.href.indexOf('https://swasti.org/resources?hss') !== -1) {
+        // Redirect to the new URL
+        window.location.href = 'https://swasti.org/resources?workarea=142';
+      }
+
+$('.carousel.carousel-multi .carousel-item').each(function () {
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().attr("aria-hidden", "true").appendTo($(this));
+
+  if (next.next().length > 0) {
+    next.next().children(':first-child').clone().attr("aria-hidden", "true").appendTo($(this));
+  }
+  else {
+    $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+  }
+});
+
+    $('#ham-menu').on('click', function () {
+      $('#menu').toggleClass('active');
+    });
+
+    $('#menu-close').on('click', function () {
+      $('#menu').toggleClass('active');
+    });
+
+    $('.2002-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2002-0').addClass('cls-3');
+      $('#timeline-year').html('2002');
+      $('#timeline-content').html('CMS (under Swasti brand) in association with the State AIDS Society conducts a Project Director Induction programme for IAS officers.');
+    });
+    $('.2002-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2002-1').addClass('cls-3');
+      $('#timeline-year').html('2002');
+      $('#timeline-content').html('CMS’ first national level project (under Swasti brand) maps high-risk groups in Mizoram. ');
+    });
+    $('.2002-2').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2002-2').addClass('cls-3');
+      $('#timeline-year').html('2002');
+      $('#timeline-content').html('The Catalyst Group incubates Swasti as a non-profit to work on public health issues. ');
+    });
+    $('.2003-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2003-0').addClass('cls-3');
+      $('#timeline-year').html('2003');
+      $('#timeline-content').html('Supports Supervision Team to support KSAPS to implement the Prevention and Care HIV program in Karnataka');
+    });
+
+    $('.2004-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2004-0').addClass('cls-3');
+      $('#timeline-year').html('2004');
+      $('#timeline-content').html('Swasti conducts a high-risk group mapping exercise, based on tools and methodologies, starting in Karnataka, in partnership with CMS. Several of these tools become national guidelines recognized by governments and international agencies alike.');
+    });
+
+    $('.2004-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2004-1').addClass('cls-3');
+      $('#timeline-year').html('2004');
+      $('#timeline-content').html('Swasti is registered as a non-profit health resource centre. ');
+    });
+
+    $('.2005-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2005-0').addClass('cls-3');
+      $('#timeline-year').html('2005');
+      $('#timeline-content').html('Swasti partners with a collective of women in sex work (WSW), Swathi Mahila Sangha, to develop an empowerment model. Project Pragati based out of Bangalore - financed by Bill and Melinda Gates Foundation. The success of this was later replicated and scaled across 84 community-based organisation in 2014.');
+    });
+
+    // $('.2007-0').on('click', function (ev) {
+    //   $('.cls-2').removeClass('cls-3');
+    //   $('.2007-0').addClass('cls-3');
+    //   $('#timeline-year').html('2007');
+    //   $('#timeline-content').html('Launches a joint initiative with the Karnataka Health Promotion Trust - ‘The Learning Systems’ project - aimed at improving quality, efficiency and effectiveness of programmes by developing and maintaining systems for facilitating learning among organisations working in the domain of HIV/AIDS.');
+    // });
+
+    $('.2008-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2008-0').addClass('cls-3');
+      $('#timeline-year').html('2008');
+        $('#timeline-content').html('Expands global footprint to 11 countries through empowering women workers, workplace interventions, in partnership with GAP Inc, and the Personal Advancement and Career Enhancement (PACE) program.'); //REPLACE TO-: Coauthors a study led by the University of Houston, using data from 2,705 women sex workers registered under Pragati, from 2008 through 2012 to see how soon after meeting the peer did the woman sex worker voluntarily go to a clinic for a check-up or treatment.
+    });
+
+    $('.2008-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2008-1').addClass('cls-3');
+      $('#timeline-year').html('2008');
+      $('#timeline-content').html('Starts workplace interventions focused on empowerment of women workers through lifeskills training. The first initiative, in partnership with GAP Inc through the Personal Advancement and Career Enhancement (PACE) program, has now evolved into Worker Wellness program focusing on the Wellbeing of Workers, their families and Communities.  ');
+    });
+
+    $('.2009-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-0').addClass('cls-3');
+      $('#timeline-year').html('2009');
+      $('#timeline-content').html('Prepares the HIV component of the country’s proposal for Round 9 funding from the Global Fund to Fight AIDS, Tuberculosis and Malaria, on behalf of India’s Country Coordinating Mechanism on commission from UNAIDS. ');
+    });
+    
+    $('.2009-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-1').addClass('cls-3');
+      $('#timeline-year').html('2009');
+      $('#timeline-content').html('Prepares (on commission from UNAIDS Regional Support Team – Asia Pacific) nine country fact sheets which consist of the status of the epidemic, trends, drivers etc, as well as national response and gaps and key priority areas to aid the Global Fund Technical Review Plan in decision making for country proposals. ');
+    });
+   
+    $('.2009-2').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-2').addClass('cls-3');
+      $('#timeline-year').html('2009');
+      $('#timeline-content').html('Develops a guide in collaboration with Oxfam International on addressing HIV in Humanitarian Emergencies based on its involvement in a research study after the 2004 Tsunami.  ');
+    });
+
+    $('.2009-3').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-3').addClass('cls-3');
+      $('#timeline-year').html('2009');
+      $('#timeline-content').html('Carries out a study of the existing livelihood programmes for PLHIV and other vulnerable communities in collaboration with the Vrutti Livelihood Resource Centre on commission from UNDP and NACO. The study highlighted issues in the design and approach of livelihood programs and the limited impact on poverty reduction of those infected and affected by HIV for a variety of reasons.   ');
+    });
+
+    $('.2010-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2010-0').addClass('cls-3');
+      $('#timeline-year').html('2010');
+      $('#timeline-content').html('Swasti expands its footprint to the 28th State and Union territories in India. ');
+    });
+
+    $('.2013-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2013-0').addClass('cls-3');
+      $('#timeline-year').html('2013');
+      $('#timeline-content').html('WHO invites Swasti to present their work on health workforce at the 3rd Global HRH conference in Recife, Brasil.  '); //Replace To:- Co-established eleven community-led water plants with the community in Chikballapur. An extensive study by two Water Fellows from Arghyam in 2018 revealed that Thimammpalli, where the first community water plant was inaugurated back in 2013, still functions to full capacity.
+    });
+
+    $('.2013-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2013-1').addClass('cls-3');
+      $('#timeline-year').html('2013');
+      $('#timeline-content').html('Swasti co-establishes 11 community-led water plants in Chikballapur to address the issue of rampant fluorosis in areas where small holder farmers reside. All 11 are functioning and self-sustained as of 2022. '); //Replace To:- Co-established eleven community-led water plants with the community in Chikballapur. An extensive study by two Water Fellows from Arghyam in 2018 revealed that Thimammpalli, where the first community water plant was inaugurated back in 2013, still functions to full capacity.
+    });
+
+    $('.2014-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2014-0').addClass('cls-3');
+      $('#timeline-year').html('2014');
+      $('#timeline-content').html('Implements Avahan India AIDS initiative Phase III (2014- 2017) with 84 community organisations reaching 130,000 women sex workers, men who have sex with men (MSM) and transpersons.');
+    });
+
+    // $('.2016-0').on('click', function (ev) {
+    //   $('.cls-2').removeClass('cls-3');
+    //   $('.2016-0').addClass('cls-3');
+    //   $('#timeline-year').html('2016');
+    //   $('#timeline-content').html('Women in sex work and their community organizations formed the Taaras coalition. Swasti as its secretariat facilitated the involvement into the coalition and existing networks of women in sex work in India such as AINSW, NNSW and others. ');
+    // });    
+
+    // $('.2017-1').on('click', function (ev) {
+    //   $('.cls-2').removeClass('cls-3');
+    //   $('.2017-1').addClass('cls-3');
+    //   $('#timeline-year').html('2017');
+    //   $('#timeline-content').html('Launches its flagship innovation in comprehensive primary healthcare “Invest for Wellness” (i4We).');
+    // });
+    
+    $('.2017-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2017-0').addClass('cls-3');
+      $('#timeline-year').html('2017');
+      $('#timeline-content').html('Launches its flagship innovation in comprehensive primary healthcare “Invest for Wellness” (i4We).');
+    });
+    
+    $('.2019-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2019-0').addClass('cls-3');
+      $('#timeline-year').html('2019');
+      $('#timeline-content').html('Reaches more than 200,000 women in 250+ factories, across 20 brands through programmes like Walmart’s Women in Factories, Levi’s Worker Well-Being, GAP’s PACE, Debenham’s Life, BSR’s HER programme, Primark’s My Life, Inditex’s Sakhi and Swasti’s own Invest4Wellness (i4We) programme');
+    }); 
+
+    $('.2020-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2020-0').addClass('cls-3');
+      $('#timeline-year').html('2020');
+      $('#timeline-content').html('Co-incubates the #COVIDActionCollab (CAC), a pan-India collaborative (with more than 350partners), providing comprehensive COVID response for the most vulnerable communities. ');
+    }); 
+
+  });
+</script>
+
+<!-- JavaScript For Mobile View Start -->
+
+<script>
+  
+  $(document).ready(function () {
+
+    $('.2002-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2002-0').addClass('cls-3');
+      $('#timeline-year1').html('2002');
+      $('#timeline-content1').html('The Catalyst Group incubates Swasti as a non-profit to work on ');
+      $('#timeline-content2').html('public health issues.');
+      $('#timeline-content3').html('');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+    $('.2002-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2002-1').addClass('cls-3');
+      $('#timeline-year1').html('2002');
+      $('#timeline-content1').html('CMS’ first national level project (under Swasti brand) maps');
+      $('#timeline-content2').html('high risk groups in Mizoram. ');
+      $('#timeline-content3').html(' ');
+      $('#timeline-content4').html(' ');
+      $('#timeline-content5').html(' ');
+    });
+    $('.2002-2').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2002-2').addClass('cls-3');
+      $('#timeline-year1').html('2002');
+      $('#timeline-content1').html('CMS (under Swasti brand) in association with the State');
+      $('#timeline-content2').html('CMS (AIDS Society conducts a Project Director');
+      $('#timeline-content3').html('Induction programme for IAS officers.');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+    $('.2003-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2003-0').addClass('cls-3');
+      $('#timeline-year1').html('2003');
+      $('#timeline-content1').html('Supports Supervision Team to support KSAPS to implement');
+      $('#timeline-content2').html('the Prevention and Care HIV program in Karnataka');
+      $('#timeline-content3').html('');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+
+    $('.2004-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2004-0').addClass('cls-3');
+      $('#timeline-year1').html('2004');
+      $('#timeline-content1').html('Swasti is formally registered as a non-profit health resource centre. ');
+      $('#timeline-content2').html('');
+      $('#timeline-content3').html('');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+
+    $('.2004-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2004-1').addClass('cls-3');
+      $('#timeline-year1').html('2004');
+      $('#timeline-content1').html('Swasti conducts a high risk group mapping exercise starting');
+      $('#timeline-content2').html('in Karnataka based on tools and methodologies');
+      $('#timeline-content3').html('developed in partnership with CMS. Several');
+      $('#timeline-content4').html('of these tools became national guidelines recognized');
+      $('#timeline-content5').html('by governments and international agencies alike.');
+    });
+
+    $('.2005-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2005-0').addClass('cls-3');
+      $('#timeline-year1').html('2005');
+      $('#timeline-content1').html('Swasti partners with a collective of women in sex work (WSW), Swathi Mahila');
+      $('#timeline-content2').html('Sangha, to develop and empowerment model to advance their interests.');
+      $('#timeline-content3').html('Project Pragati based out of Bangalore city- financed by Bill');
+      $('#timeline-content4').html('and Melinda Gates Foundation. The success of this was later replicated');
+      $('#timeline-content5').html('and scaled across 84 community-based organisation in 2014.');
+    });
+
+    // $('.2007-0').on('click', function (ev) {
+    //   $('.cls-2').removeClass('cls-3');
+    //   $('.2007-0').addClass('cls-3');
+    //   $('#timeline-year').html('2007');
+    //   $('#timeline-content').html('Launches a joint initiative with the Karnataka Health Promotion Trust - ‘The Learning Systems’ project - aimed at improving quality, efficiency and effectiveness of programmes by developing and maintaining systems for facilitating learning among organisations working in the domain of HIV/AIDS.');
+    // });
+
+    $('.2008-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2008-0').addClass('cls-3');
+      $('#timeline-year1').html('2008');
+        $('#timeline-content1').html('Starts workplace interventions focused on empowerment of women workers through lifeskills training. The first initiative, in partnership with GAP Inc through the Personal Advancement and Career Enhancement (PACE) program, has now evolved into Worker Wellness program focusing on the Wellbeing of Workers, their families and Communities.');
+    });
+
+    $('.2008-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2008-1').addClass('cls-3');
+      $('#timeline-year1').html('2008');
+      $('#timeline-content1').html('Expands global footprint to 11 countries through empowering ');
+      $('#timeline-content2').html('women workers through workplace interventions, in');
+      $('#timeline-content3').html('in partnership with GAP Inc through the Personal');
+      $('#timeline-content4').html('Advancement and Career Enhancement (PACE) program.');
+      $('#timeline-content5').html(' ');
+    });
+
+    $('.2009-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-0').addClass('cls-3');
+      $('#timeline-year1').html('2009');
+      $('#timeline-content1').html('Prepares the HIV component of the country’s proposal for Round 9 funding from the Global Fund to Fight AIDS, Tuberculosis and Malaria, on behalf of India’s Country Coordinating Mechanism on commission from UNAIDS. ');
+    });
+    
+    $('.2009-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-1').addClass('cls-3');
+      $('#timeline-year1').html('2009');
+      $('#timeline-content1').html('Prepares (on commission from UNAIDS Regional Support Team – Asia Pacific) nine country fact sheets which consist of the status of the epidemic, trends, drivers etc, as well as national response and gaps and key priority areas to aid the Global Fund Technical Review Plan in decision making for country proposals. ');
+    });
+   
+    $('.2009-2').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-2').addClass('cls-3');
+      $('#timeline-year1').html('2009');
+      $('#timeline-content1').html('Develops a guide in collaboration with Oxfam International on addressing HIV in Humanitarian Emergencies based on its involvement in a research study after the 2004 Tsunami.  ');
+    });
+
+    $('.2009-3').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2009-3').addClass('cls-3');
+      $('#timeline-year1').html('2009');
+      $('#timeline-content1').html('Carries out a study of the existing livelihood programmes for PLHIV and other vulnerable communities in collaboration with the Vrutti Livelihood Resource Centre on commission from UNDP and NACO. The study highlighted issues in the design and approach of livelihood programs and the limited impact on poverty reduction of those infected and affected by HIV for a variety of reasons.   ');
+    });
+
+    $('.2010-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2010-0').addClass('cls-3');
+      $('#timeline-year1').html('2010');
+      $('#timeline-content1').html('Swasti expands footprint to the 28th State and Union');
+      $('#timeline-content2').html('territories in India. ');
+      $('#timeline-content3').html('');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+
+    $('.2013-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2013-0').addClass('cls-3');
+      $('#timeline-year1').html('2013');
+      $('#timeline-content1').html('WHO invites Swasti to present their work on health workforce at the');
+      $('#timeline-content2').html('3rd Global HRH conference in Recife, Brasil.');
+      $('#timeline-content3').html('');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+
+    $('.2013-1').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2013-1').addClass('cls-3');
+      $('#timeline-year1').html('2013');
+      $('#timeline-content1').html('Co-establishes eleven community-led water plants with the community');
+      $('#timeline-content2').html('in Chikballapur to address the issue of rampant fluorisis in areas');
+      $('#timeline-content3').html('where small holder farmers reside. All 11 are functioning and');
+      $('#timeline-content4').html('and self-sustained as of 2022.');
+      $('#timeline-content5').html('');
+    });
+
+    $('.2014-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2014-0').addClass('cls-3');
+      $('#timeline-year1').html('2014');
+      $('#timeline-content1').html('Implements Avahan India AIDS initiative Phase III (2014- 2017) with 84 ');
+      $('#timeline-content2').html('community organisations reaching 130,000 women sex workers,');
+      $('#timeline-content3').html('men who have sex with men (MSM) and transpersons.');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+
+    // $('.2016-0').on('click', function (ev) {
+    //   $('.cls-2').removeClass('cls-3');
+    //   $('.2016-0').addClass('cls-3');
+    //   $('#timeline-year').html('2016');
+    //   $('#timeline-content').html('Women in sex work and their community organizations formed the Taaras coalition. Swasti as its secretariat facilitated the involvement into the coalition and existing networks of women in sex work in India such as AINSW, NNSW and others. ');
+    // });    
+
+    // $('.2017-1').on('click', function (ev) {
+    //   $('.cls-2').removeClass('cls-3');
+    //   $('.2017-1').addClass('cls-3');
+    //   $('#timeline-year').html('2017');
+    //   $('#timeline-content').html('Launches its flagship innovation in comprehensive primary healthcare “Invest for Wellness” (i4We).');
+    // });
+    
+    $('.2017-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2017-0').addClass('cls-3');
+      $('#timeline-year1').html('2017');
+      $('#timeline-content1').html('Launches its flagship innovation in comprehensive primary ');
+      $('#timeline-content2').html('healthcare “Invest for Wellness” (i4We).');
+      $('#timeline-content3').html('');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    });
+    
+    $('.2019-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2019-0').addClass('cls-3');
+      $('#timeline-year1').html('2019');
+      $('#timeline-content1').html('Reaches more than 200,000 women in 300 to 250+ factories, across 20');
+      $('#timeline-content2').html('brands through programmes like Walmart’s Women in Factories,');
+      $('#timeline-content3').html('Levi’s Worker Well-Being, GAP’s PACE, Debenham’s Life,');
+      $('#timeline-content4').html('BSR’s HER programme, Primark’s My Life, Inditex’s Sakhi and Swasti’s');
+      $('#timeline-content5').html('own Invest4Wellness (i4We) programme');
+    }); 
+
+    $('.2020-0').on('click', function (ev) {
+      $('.cls-2').removeClass('cls-3');
+      $('.2020-0').addClass('cls-3');
+      $('#timeline-year1').html('2020');
+      $('#timeline-content1').html('Co-incubates the  #COVIDActionCollab (CAC) an all pan-India collaborative');
+      $('#timeline-content2').html('(>350partners), providing comprehensive COVID response with the');
+      $('#timeline-content3').html('the most vulnerable communities. ');
+      $('#timeline-content4').html('');
+      $('#timeline-content5').html('');
+    }); 
+
+  });
+
+     
+
+</script>
+<!-- JavaScript For Mobile View End -->
+ 
+<body>
+ 
+   <header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="brand-logo">
+        <a href="https://swasti.org/">
+          <img src="https://swasti.org/assets/front_end/images/logo.svg" />
+        </a>
+      </div>
+      <div class="hamburger-menu">
+        <a id="ham-menu" class="hamburger-btn" href="javascript:void(0)">Menu</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- hamburger Menu -->
+<div id="menu" class="menu hamburger-list">
+    <div class="container">
+      <div class="menu-close-wrap">
+        <a id="menu-close" class="menu-close" href="javascript:void(0)">Close Menu</a>
+      </div>
+      <div class="main-menu">
+        <ul class="main-nav">
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/swasti_20">20 Years of Swasti</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/">Home</a>
+          </li>
+          <li class="menu-item has-submenu">
+            <a class="menu-item-link" href="javascript:void(0)">COVID-19</a>
+            <ul class="submenu">
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/swasti_response_to_covid">Swasti’s Response to COVID-19</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/covidaction_collab">#COVIDActionCollab</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a class="menu-item-link" href="javascript:void(0)">About Swasti</a>
+            <ul class="submenu">
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/about_us">About Us</a></li>
+              <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/theory_of_change">Theory of Change</a>
+          </li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/the_swasti_story">The Swasti Story</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_team">Our Team</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_partners">Our Partners</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/brand_hub">Brand Hub</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/join_our_journey">Join Our Journey</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a class="menu-item-link" href="javascript:void(0)">Our Work</a>
+            <ul class="submenu">
+                <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work">View All</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Primary-Health">Primary Health</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Water-Sanitation-and-Hygiene-WaSH">Water, Sanitation and Hygiene (WaSH)</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Sexual-Reproductive-Health-SRH">Sexual Reproductive Health (SRH)</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Gender-and-Equity">Gender and Equity</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Community-Systems-Strengthening">Community Systems Strengthening</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Health-Systems-Strengthening">Health Systems Strengthening</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Workforce-Wellbeing">Workforce Wellbeing </a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Social-Protection">Social Protection </a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/One-Health">One Health </a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/Global-Health-Security-Pandemic-Response">Global Health Security & Pandemic Response</a></li>
+                                   <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/our_work/WellTech">WellTech</a></li>
+                                <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/climate-x-health">Climate And Health <span class="link-badge">NEW</span></a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-submenu">
+            <a class="menu-item-link" href="javascript:void(0)">Knowledgebase</a>
+            <ul class="submenu">
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/knowledgebase">View All</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/knowledgebase/filterblog?id=1&search=&workarea=">Evidence, Research & Studies</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/resources">Resources</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/knowledgebase/filterblog?id=2&search=&workarea=">Analysis</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/knowledgebase/filterblog?id=3&search=&workarea=">News and Updates</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://playbooks.swasti.org/" target="_blank">Playbooks</a></li>
+              <li class="menu-item"><a class="menu-item-link" href="https://swasti.org/videos">Videos</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/work_with_us">Work With Us</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/contact_us">Contact Us</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/knowledgebase/blog/support-us">Support Us</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/compliance">Compliance</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/legal">Legal</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-item-link" href="https://swasti.org/press">Press</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+      <section class="home-main-banner">
+    <div class="banner-wrapper">
+        <div class="banner-slider-main">
+                        <div class="banner-item">
+                                    <img class="baneer-bg" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/A37I3654%20%281%29.jpg
+"
+                        alt="Swasti - Everyday wellbeing for Margianlised Communities">
+                    <div class="banner-content container">
+                        <h1 class="baner-title"> Swasti Over the Years</h1>
+                        <p class="swasti-carousel-para swasti-banner-home-para">Swasti completes 20 years of building resilient communities.</p>
+                        <a href="swasti_20" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                 <div class="banner-item">                     <img class="baneer-bg" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/DSC05542.jpg
+"
+                        alt="Health and Wellbeing for vulnerable communities">
+                    <div class="banner-content container">
+                        <h1 class="baner-title"> Everyday Wellbeing for All</h1>
+                        <p class="swasti-carousel-para swasti-banner-home-para">Adding 100 million healthy days to the lives of the most vulnerable.</p>
+                        <a href="100_million" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                 <div class="banner-item">                     <img class="baneer-bg" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/swastihome3.jpg
+"
+                        alt="Public Health NGO">
+                    <div class="banner-content container">
+                        <h1 class="baner-title"> It all starts with Community</h1>
+                        <p class="swasti-carousel-para swasti-banner-home-para">Co-creating resilient solutions with the community, driven by evidence and collaboration.</p>
+                        <a href="about_us" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                 <div class="banner-item">                     <img class="baneer-bg" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/DSC05380.jpg
+"
+                        alt="community health and hygiene">
+                    <div class="banner-content container">
+                        <h1 class="baner-title"> Our Theory of Change</h1>
+                        <p class="swasti-carousel-para swasti-banner-home-para">Powered by an uncompromising compassion, our approach includes equal measures of scientific rigour and action.</p>
+                        <a href="theory_of_change" class="btn btn-primary" target="_blank">Learn More</a>
+                    </div>
+                </div>
+                            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-we-section">
+    <div class="container">
+        <div class="content-wrape">
+            <div class="left-side">
+                <h2 class="title-ex-sm">Why do we exist?</h2>
+            </div>
+            <div class="right-side">
+                <span class="line-bg"></span>
+                <p>Swasti ("wellbeing" in Sanskrit) was born from a belief that well-being shouldn't be a privilege for
+                    a few. We envision a world where everyone, regardless of their background, has the opportunity for
+                    <span>everyday wellbeing - daily health and happiness</span> . And, this is why we exist.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mission-cards">
+    <div class="mission-row">
+        <div class="info-card">
+            <div class="info-card-body">
+                <img class="card-bg-img" src="https://swasti.org/assets/front_end/images/vission-img.png" alt="Swasti's vision" />
+                <div class="crad-info-text">
+                    <span class="wite-line"></span>
+                    <h3>Vision</h3>
+                    <p>Everyday Wellbeing For Everyone</p>
+                    <a href="https://swasti.org/about_us">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="info-card-body">
+                <img class="card-bg-img" src="https://swasti.org/assets/front_end/images/mission-img.png" alt="100 Million Healthy Days" />
+                <div class="crad-info-text">
+                    <span class="wite-line"></span>
+                    <h3>Mission</h3>
+                    <p>100 Million Healthy Days</p>
+                    <a href="https://swasti.org/100_million">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="info-card-body">
+                <img class="card-bg-img" src="https://swasti.org/assets/front_end/images/home-health-img.png" alt="Health Catalyst" />
+                <div class="crad-info-text">
+                    <span class="wite-line"></span>
+                    <h3>What does it mean to be a <span>Health Catalyst</span>?</h3>
+                    <p>For 20 years, we've championed a "whole of society approach," bringing together communities,
+                        policymakers, and healthcare providers.</p>
+                    <a href="https://swasti.org/theory_of_change">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-about">
+    <div class="container">
+        <div class="about-content-wrapper Knowledge-block">
+            <div class="left-side">
+                <div class="title-round">
+                    <h2>Knowledge Base</h2>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="knowledge-base-row">
+                    <div class="left-side">
+                        <div class="featured-card">
+                            <div class="featured-body">
+                                <img class="bg-img" src="https://swasti.org/assets/front_end/images/monsoon-pocket.png" alt="">
+                                <div class="featured-content">
+                                    <span class="tag">Featured</span>
+                                    <a class="title" href="https://drive.google.com/file/d/12oEvCYCPQeeBNAySgbZSjQA74kYj2vgG/view?usp=drivesdk" target="_blank">Swasti Monsoon Pocket Book</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur. Vehicula eget aliquet amet mi felis id
+                                        aenean risus. </p>
+                                    <div class="date-link">
+                                        <span class="date">20 August 2024</span>
+                                        <a href="#">View all</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side-col">
+                        <div class="right-top-row">
+                            <div class="left-top">
+                                <div class="knowledge-block">
+                                    <div class="knowledge-block-body p-0">
+                                        <div class="knowledge-news-slider">
+                                                                                        <div class="news-item">
+                                                <div class="news-item-body">
+                                                <a class="news-img" target="_blank" href="https://swasti.org/knowledgebase/blog/turning-times-alternate-livelihood-opportunities-for-marginalised-women">
+                                                        <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/DSC_8656%20%281%29.JPG" alt="">
+                                                    </a>
+                                                        <div class="news-info">
+                                                            <a target="_blank" href="https://swasti.org/knowledgebase/blog/turning-times-alternate-livelihood-opportunities-for-marginalised-women">
+                                                            <span class="cat-name">News & Updates</span>
+                                                            <h5>Turning Times - Alternate Livelihood Opportunities for Marginalised Women</h5>
+                                                            <p>&nbsp;
+
+The pandemic has shown that community groups have a strong support structure for vulnerabl....</p>
+                                                            </a>
+                                                            <p class="lern-more"><a target="_blank" href="https://swasti.org/knowledgebase/filterblog?id=3&search=&workarea=">View all</a></p>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="knowledge-block">
+                                    <div class="knowledge-block-body">
+                                        <div class="knowledge-resources">
+                                                                                        <div class="resources-item">
+                                                <div  class="resources-item-body">
+                                                    <a target="_blank" target="_blank" href="https://swasti-prod.s3.ap-south-1.amazonaws.com/HIV-and-Rural-Model.pdf
+">
+                                                    <div class="icon-bx">
+                                                        <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/pdf.png
+" alt="">
+                                                    </div>
+                                                    <div class="info-txt">
+                                                        <span class="cat-name">Resources</span>
+                                                        <h5>HIV and Rural Model</h5>
+                                                        <span>2018-03-30</span>
+                                                        <p class="lern-more"><a target="_blank" href="https://swasti.org/resources">View all</a></p>
+                                                    </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="right-top">
+                            <div class="knowledge-block">
+                                    <div class="knowledge-block-body p-0">
+                                        <div class="knowledge-video-slider">
+                                                                                        <div class="video-card">
+                                                <a target="_blank" href="https://swasti.org/knowledgebase/blog/sbi-foundation-community-based-testing-initiative">
+                                                    <div class="video-thumb">
+                                                        <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/SwastiWebsitePartners-18-285x130.png" alt="">
+
+                                                    </div>
+                                                    <div class="video-title">
+                                                        <span class="cat-name">Evidence, Research, & Studies</span>
+                                                        <a target="_blank" href="https://swasti.org/knowledgebase/blog/sbi-foundation-community-based-testing-initiative"><h3>SBI Foundation- Community-Based Testing Initiative</h3></a>
+                                                        <p>Our Community Based Testing initiative for COVID-19 supported by SBI Foundation aims to increase acc....</p>
+                                                        <a target="_blank" href="https://swasti.org/knowledgebase/filterblog?id=1&search=&workarea=" class="lern-more">View all</a>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="knowledge-block">
+                                <div class="knowledge-block-body">
+                                <div class="knowledge-playbooks">
+                                    <div class="playbooks-item">
+                                        <div class="playbooks-body">
+                                            <div class="playbooks-info">
+                                                <span class="cat-name">Playbooks</span>
+                                                <h6>
+                                                    <a target="_blank" href="https://playbooks.swasti.org/community.html">The Community
+                                                        Led Monitoring (CLM) Playbook</a>
+                                                </h6>
+                                                <a target="_blank" href="https://playbooks.swasti.org/community.html">Know more</a>
+                                            </div>
+                                            <div class="playbook-thumb">
+                                                <img src="https://swasti.org/assets/front_end/images/playbook-1.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playbooks-item">
+                                        <div class="playbooks-body">
+                                            <div class="playbooks-info">
+                                            <span class="cat-name">Playbooks</span>
+                                                <h6>
+                                                    <a target="_blank" href="https://playbooks.swasti.org/surveillance.html">Environmental
+                                                        Surveillance for COVID-19</a>
+                                                </h6>
+                                                <a target="_blank" href="https://playbooks.swasti.org/surveillance.html">Know more</a>
+                                            </div>
+                                            <div class="playbook-thumb">
+                                                <img
+                                                    src="https://swasti.org/assets/front_end/images/playbook-2.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playbooks-item">
+                                        <div class="playbooks-body">
+                                            <div class="playbooks-info">
+                                            <span class="cat-name">Playbooks</span>
+                                                <h6>
+                                                    <a target="_blank" href="https://playbooks.swasti.org/covid.html">The COVID-19
+                                                        Vaccination</a>
+                                                </h6>
+                                                <a target="_blank" href="https://playbooks.swasti.org/covid.html">Know more</a>
+                                            </div>
+                                            <div class="playbook-thumb">
+                                                <img
+                                                    src="https://swasti.org/assets/front_end/images/playbook-3.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playbooks-item">
+                                        <div class="playbooks-body">
+                                            <div class="playbooks-info">
+                                            <span class="cat-name">Playbooks</span>
+                                                <h6>
+                                                    <a target="_blank" href="https://playbooks.swasti.org/self-testing.html">Self-Testing
+                                                        in Factories | India</a>
+                                                </h6>
+                                                <a target="_blank" href="https://playbooks.swasti.org/self-testing.html">Know more</a>
+                                            </div>
+                                            <div class="playbook-thumb">
+                                                <img
+                                                    src="https://swasti.org/assets/front_end/images/playbook-4.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="playbooks-item">
+                                        <div class="playbooks-body">
+                                            <div class="playbooks-info">
+                                            <span class="cat-name">Playbooks</span>
+                                                <h6>
+                                                    <a target="_blank"
+                                                        href="https://playbooks.swasti.org/self-testing-communities.html">Self-Testing
+                                                        in Communities</a>
+                                                </h6>
+                                                <a target="_blank" href="https://playbooks.swasti.org/self-testing-communities.html">Know
+                                                    more</a>
+                                            </div>
+                                            <div class="playbook-thumb">
+                                                <img
+                                                    src="https://swasti.org/assets/front_end/images/playbook-5.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="swasti-map">
+    <div class="map-wrapper">
+        <img src="https://swasti.org/assets/front_end/images/world-map-of-swasti.jpg" loading="lazy" alt="Swasti Global" />
+    </div>
+</section>
+
+<section class="swasti-domain-part">
+    <div class="container">
+        <div class="domain-row-wrapper">
+            <div class="left-side">
+                <h2 class="title-ex-sm">Our Domain Areas</h2>
+                <a href="swasti/our_work" class="btn btn-primary">Learn more</a>
+            </div>
+            <div class="right-side">
+                <div class="top-desc">
+                    <p>Faced with the growing threats of climate change, Swasti channels deep expertise at the
+                        intersections of public health, community systems strenghtening, health systems strengthening
+                        and disaster response. Our Domains: </p>
+                </div>
+                <div class="domain-list">
+                    <div class="d-flex flex-wrap justify-content-start row">
+                                                <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Primary-Health">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/primery_heilth.png
+" alt="Primary Health">
+                                <div class="focus-box-content">
+                                    <p>Primary Health</p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Water-Sanitation-and-Hygiene-WaSH">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/water_senitization.png
+" alt="Water, Sanitation and Hygiene (WaSH)">
+                                <div class="focus-box-content">
+                                    <p>Water, Sanitation and Hygiene (WaSH)</p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Sexual-Reproductive-Health-SRH">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Sexual%20Reproductive%20Health%20and%20Rights.png
+" alt="Sexual Reproductive Health (SRH)">
+                                <div class="focus-box-content">
+                                    <p>Sexual Reproductive Health (SRH)</p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Gender-and-Equity">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/GenderEquity.png
+" alt="Gender and Equity">
+                                <div class="focus-box-content">
+                                    <p>Gender and Equity</p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Community-Systems-Strengthening">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Community%20Systems%20Strengthening.png
+" alt="Community Systems Strengthening">
+                                <div class="focus-box-content">
+                                    <p>Community Systems Strengthening</p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Health-Systems-Strengthening">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Healthsystem.png
+" alt="Health Systems Strengthening">
+                                <div class="focus-box-content">
+                                    <p>Health Systems Strengthening</p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Workforce-Wellbeing">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/WorkforceWellbeing.png
+" alt="Workforce Wellbeing ">
+                                <div class="focus-box-content">
+                                    <p>Workforce Wellbeing </p>
+                            </a>
+                        </div>
+                    </div>
+                                            <div class="focus-box content col-lg-4 col-md-4 col-6">
+                            <a class="focus-link" href="https://swasti.org/our_work/Social-Protection">
+                                <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Socialprotection.png
+" alt="Social Protection ">
+                                <div class="focus-box-content">
+                                    <p>Social Protection </p>
+                            </a>
+                        </div>
+                    </div>
+                                        <div class="focus-box content col-lg-4 col-md-4 col-6">
+                        <a class="focus-link" href="https://swasti.org/our_work/One-Health">
+                            <img class="focus-icon mb-3"
+                                src="https://swasti-prod.s3.ap-south-1.amazonaws.com/onehelth.png" alt="One Health">
+                            <div class="focus-box-content">
+                                <p>One Health</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="focus-box content col-lg-4 col-md-4 col-6">
+                        <a class="focus-link"
+                            href="https://swasti.org/our_work/Global-Health-Security-Pandemic-Response">
+                            <img class="focus-icon mb-3" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/ghs.png" alt="Global Health Security & Pandemic Response">
+                            <div class="focus-box-content">
+                                <p>Global Health Security & Pandemic Response</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="focus-box content col-lg-4 col-md-4 col-6">
+                        <a class="focus-link" href="https://swasti.org/our_work/WellTech">
+                            <img class="focus-icon mb-3"
+                                src="https://swasti-prod.s3.ap-south-1.amazonaws.com/WellTech.png" alt="WellTech">
+                            <div class="focus-box-content">
+                                <p>WellTech</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="focus-box content col-lg-4 col-md-4 col-6">
+                        <a class="focus-link" href="https://swasti.org/climate-x-health">
+                            <img class="focus-icon mb-3"
+                                src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Community%20Systems%20Strengthening.png" alt="Climate And Health">
+                            <div class="focus-box-content">
+                                <p>Climate And Health </p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="decoration-img" src="https://swasti.org/assets/front_end/images/domain-dec.png" />
+</section>
+<!-- <section class="impact-infographic">
+    <div class="container">
+        <div class="section-title">
+            <h2>20 years of Impact infographic</h2>
+        </div>
+    </div>
+</section> -->
+
+<section class="swasti-team-home">
+    <div class="container">
+        <div class="swast-team-wrapper">
+            <div class="left-side">
+                <h2 class="title-ex-sm">Our Domain Areas</h2>
+            </div>
+            <div class="right-side">
+                <p>Our multidisciplinary teams weave together environmental science, public health expertise, and
+                    community wisdom to build resilience for both people and healthcare systems. Swasti’s success is in
+                    reinventing systems that work for all, particularly for the vulnerable and the multidisciplinary
+                    teams at Swasti do two things well -</p>
+                <ul>
+                    <li>Demonstrate scalable, cost effective and sustainable models in partnership with communities</li>
+                    <li>Support partners to reach impact. </li>
+                </ul>
+                <p>Swasti’s work loops Policy-Practise-Policy, at sub-national, national, regional and international
+                    levels with a range of partners among impact organisations, bilateral, multilateral, government,
+                    foundations, academic and corporate bodies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-list-home">
+    <div class="container">
+    <div class="team-slider-home row justify-content-center">
+        <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Angela%20Chaudhri.png" alt="Dr Angela Chaudhuri">
+                </div>
+                <div class="team-desc">
+                    <h4>Dr Angela Chaudhuri<h4>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/KM.png" alt="CFO and Treasurer">
+                </div>
+                <div class="team-desc">
+                    <h4>Krishnamoorthy Kuntini</h4>
+                    <p>CFO and Treasurer</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img style="object-fit: cover;" src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Dr%20Jacob%20John.png" alt="Dr. Jacob John">
+                </div>
+                <div class="team-desc">
+                    <h4>Dr. Jacob John</h4>
+                    <p>Chairperson</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Alka%20N.png" alt="Alka Narang">
+                </div>
+                <div class="team-desc">
+                    <h4>Alka Narang</h4>
+                    <p>Vice Chairperson</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Thanga.png" alt="Thangavelu Ramaswamy">
+                </div>
+                <div class="team-desc">
+                    <h4>Thangavelu Ramaswamy</h4>
+                    <p>Secretary, Director - Accountability4Impact</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Shama%20copy%20BW-1.png" alt="Shama Karkal">
+                </div>
+                <div class="team-desc">
+                    <h4>Shama Karkal</h4>
+                    <p>Partner, Governing Board Member</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Joseph%20Julian.png" alt="Joseph Julian K.G">
+                </div>
+                <div class="team-desc">
+                    <h4>Joseph Julian K.G</h4>
+                    <p>Senior Director</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Shiv.png" alt="Shiv Kumar">
+                </div>
+                <div class="team-desc">
+                    <h4>Shiv Kumar</h4>
+                    <p>Chief Mentor</p>
+                </div>
+            </div>
+            <div class="team-card col-lg-cut-5">
+                <div class="team-image">
+                    <img src="https://swasti-prod.s3.ap-south-1.amazonaws.com/Raghu.png" alt="Raghunathan Narayanan">
+                </div>
+                <div class="team-desc">
+                    <h4>Raghunathan Narayanan</h4>
+                    <p>Mentor</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-nav"></div>
+    </div>
+</section>
+
+
+<section class="swasti-reviews">
+    <img class="dec-img" src="https://swasti.org/assets/front_end/images/testimonial-dec.png" alt="">
+    <div class="container">
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-card-body">
+                    <div class="testim-icon top">
+                        <img src="https://swasti.org/assets/front_end/images/quote-top.png" alt="">
+                    </div>
+                    <p>"In the world of complacent and self-righteous sector of
+                        development,
+                        organizations like Swasti Health Catalyst provide a reliable address of quality,
+                        clarity,
+                        commitment, accountability and professionalism."</p>
+                    <div class="user-info">
+                        <strong>- Hari Krishna Nibanupudi</strong>
+                        <p>Action Area Team Leader-DRR, Water and Hazards International Centre for Integrated Mountain
+                            Development, Nepal.</p>
+                    </div>
+                    <div class="testim-icon bottom">
+                        <img src="https://swasti.org/assets/front_end/images/quote-bottom.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card-body">
+                    <div class="testim-icon top">
+                        <img src="https://swasti.org/assets/front_end/images/quote-top.png" alt="">
+                    </div>
+                    <p>"When Walmart and its Foundation were looking for an
+                        organization to work
+                        with factories in India, we wanted to work with a group that could empower women and
+                        help
+                        factory management create an enabling environment where development could be sustained.
+                        The (Swasti Health Catalyst) team has been proactive, pragmatic, solutions-focused,
+                        skilled,
+                        innovative, thoughtful, understanding of human dynamics and relationships, humble,
+                        kind,
+                        inclusive, collaborative, and focused."</p>
+                    <div class="user-info">
+                        <strong>- Rajan Kamalanathan</strong>
+                        <p>Vice President of Ethical Sourcing,
+                            Walmart Stores, Inc.</p>
+                    </div>
+                    <div class="testim-icon bottom">
+                        <img src="https://swasti.org/assets/front_end/images/quote-bottom.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card-body">
+                    <div class="testim-icon top">
+                        <img src="https://swasti.org/assets/front_end/images/quote-top.png" alt="">
+                    </div>
+                    <p>"Swasti Health Catalyst has become one of the most technically
+                        proficient
+                        organisations working in the field of health and social development. In India and
+                        abroad,
+                        Swasti Health Catalyst has made significant contributions to the quality of
+                        implementation by
+                        providing much needed technical support and assistance. With experience at the grass
+                        root and
+                        also at the global level, Swasti Health Catalyst has been a contributor to India’s
+                        National AIDS
+                        Control Programme."</p>
+                    <div class="user-info">
+                        <strong>- Aradhana Johri IAS</strong>
+                        <p>IAS Additional Secretary, Department of
+                            AIDS Control, Ministry of Health & Family Welfare, Government of India.</p>
+                    </div>
+                    <div class="testim-icon bottom">
+                        <img src="https://swasti.org/assets/front_end/images/quote-bottom.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card-body">
+                    <div class="testim-icon top">
+                        <img src="https://swasti.org/assets/front_end/images/quote-top.png" alt="">
+                    </div>
+                    <p>"To me, research and practice are two wings on which knowledge
+                        takes flight.
+                        I have had the opportunity to work with several organizations. Very few bring the
+                        combination
+                        of deep commitment to making an impact at a practical level and yet being genuinely
+                        interested
+                        in finding out what works and what does not. This is what makes the Swasti Health
+                        Catalyst team
+                        special."</p>
+                    <div class="user-info">
+                        <strong>- Dr.Partha Krishnamurthy,</strong>
+                        <p>PhD, Professor of Marketing,
+                            Director, Institute for
+                            Health Care Marketing, C. T. Bauer College of Business, University of Houston.</p>
+                    </div>
+                    <div class="testim-icon bottom">
+                        <img src="https://swasti.org/assets/front_end/images/quote-bottom.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+$("body").addClass("home-page");
+
+$('.banner-slider-main').slick({
+    infinite: true,
+    dots: true,
+    arrow: false,
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+$('.testimonial-slider').slick({
+    infinite: true,
+    dots: true,
+    arrow: false,
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
+$('.knowledge-playbooks').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    rows: 3,
+    prevArrow: false,
+    nextArrow: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    centerMode: false,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            rows: 2,
+        }
+    }]
+});
+
+
+
+function getQueryParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+function autoScroll(speed) {
+    const step = speed; // Adjust the scroll speed
+
+    function scrollPage() {
+        window.scrollBy(0, step);
+
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+            // Reached the bottom of the page, reset to the top
+            window.scrollTo(0, 0);
+        }
+
+        requestAnimationFrame(scrollPage);
+    }
+
+    requestAnimationFrame(scrollPage);
+}
+
+function getQueryParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+if (getQueryParameter('autoscroll') === 'true') {
+    autoScroll(1); // Adjust the speed value as needed
+}
+</script>
+ <!-- Footer - Start   -->
+
+ 
+<section class="newsletter-section" id="newsletter-section">
+  <img class="bg-img" src="https://swasti.org/assets/front_end/images/newsletter-bg.png" alt="Subscribe to Swasti Health Catalyst">
+    <div class="container">
+        <div class="newsletter-content">
+            <div class="nws-title">
+                <h2>Stay in the loop with Swasti</h2>
+                
+            </div>
+             
+            <form method="post" action="https://swasti.org//mailchimp/subscribe" class="newsletter-form">
+                <div class="input-wrapper">
+                    <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email address" required>
+                    <button class="nws-btn" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>  
+    </div>
+</section>
+
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <div class="footer-widget">
+                    <h4>SITEMAP</h4>
+                    <div class="site-map-row">
+                        <div class="site-map-col">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="https://swasti.org/swasti_20" class="footer-link">20 Years of Swasti</a>
+                                </li>
+                                <li>
+                                    <a href="https://swasti.org/" class="footer-link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="footer-link head-text">COVID-19</a>
+                                    <ul class="footer-menu-sub">
+                                        <li>
+                                            <a href="https://swasti.org/swasti_response_to_covid"
+                                                class="footer-link">Swasti’s Response to COVID-19</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://swasti.org/covidaction_collab"
+                                                class="footer-link">#COVIDActionCollab</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" class="footer-link head-text">About Swasti</a>
+                                    <ul class="footer-menu-sub">
+                                        <li>
+                                            <a href="https://swasti.org/the_swasti_story" class="footer-link">The Swasti
+                                                Story</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://swasti.org/our_team" class="footer-link">Our Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://swasti.org/our_partners" class="footer-link">Our
+                                                Partners</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://swasti.org/brand_hub" class="footer-link">Brand Hub</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://swasti.org/join_our_journey" class="footer-link">Join Our
+                                                Journey</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://swasti.org/about_us" class="footer-link">About Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-map-col col-s-xl">
+                            <ul class="footer-menu">
+                                <li>
+                                    <a href="https://swasti.org/our_work" class="footer-link">Our Work</a>
+                                    <ul class="footer-menu-sub">
+                                                                                <li><a href="https://swasti.org/our_work/Primary-Health"
+                                                class="footer-link">Primary Health</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Water-Sanitation-and-Hygiene-WaSH"
+                                                class="footer-link">Water, Sanitation and Hygiene (WaSH)</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Sexual-Reproductive-Health-SRH"
+                                                class="footer-link">Sexual Reproductive Health (SRH)</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Gender-and-Equity"
+                                                class="footer-link">Gender and Equity</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Community-Systems-Strengthening"
+                                                class="footer-link">Community Systems Strengthening</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Health-Systems-Strengthening"
+                                                class="footer-link">Health Systems Strengthening</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Workforce-Wellbeing"
+                                                class="footer-link">Workforce Wellbeing </a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Social-Protection"
+                                                class="footer-link">Social Protection </a></li>
+                                                                                <li><a href="https://swasti.org/our_work/One-Health"
+                                                class="footer-link">One Health </a></li>
+                                                                                <li><a href="https://swasti.org/our_work/Global-Health-Security-Pandemic-Response"
+                                                class="footer-link">Global Health Security & Pandemic Response</a></li>
+                                                                                <li><a href="https://swasti.org/our_work/WellTech"
+                                                class="footer-link">WellTech</a></li>
+                                                                                <li><a href="https://swasti.org/climate-x-health" class="footer-link">Climate
+                                                And Health</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-map-col">
+                            <div class="footer-menu">
+                                <li>
+                                    <a href="https://swasti.org/knowledgebase" class="footer-link">Knowledgebase</a>
+                                    <ul class="footer-menu-sub">
+                                        <li><a href="https://swasti.org/knowledgebase/filterblog?id=1&search=&workarea="
+                                                class="footer-link">Evidence, Research & Studies</a></li>
+                                        <li><a href="https://swasti.org/resources" class="footer-link">Resources</a>
+                                        </li>
+                                        <li><a href="https://swasti.org/knowledgebase/filterblog?id=2&search=&workarea="
+                                                class="footer-link">Analysis</a></li>
+                                        <li><a href="https://swasti.org/knowledgebase/filterblog?id=3&search=&workarea="
+                                                class="footer-link">News and Updates</a></li>
+                                        <li><a href="https://playbooks.swasti.org/" target="_blank"
+                                                class="footer-link">Playbooks</a></li>
+                                        <li><a href="https://swasti.org/videos" class="footer-link">Videos</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://swasti.org/compliance" class="footer-link">Compliance</a>
+                                </li>
+                                <li>
+                                    <a href="https://swasti.org/legal" class="footer-link">Legal</a>
+                                </li>
+                                <li>
+                                    <a href="https://swasti.org/press" class="footer-link">Press</a>
+                                </li>
+                                <li>
+                                    <a href="https://swasti.org/work_with_us" class="footer-link">Work With Us</a>
+                                </li>
+                                <li>
+                                    <a href="https://swasti.org/contact_us" class="footer-link">Contact Us</a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-col contact-col-ftr">
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p> <img src="https://swasti.org/assets\front_end\images\location.svg" alt="">  No.25, Raghavendra Nilaya, AECS Layout, Ashwathnagar, Bangalore, Karnataka 560094, India.</p>
+                        <a href="mailto:hello@swasti.org"> <img
+                                src="https://swasti.org/assets\front_end\images\email.svg" alt="">Email: hello@swasti.org</a>
+                        <a href="tel:+91-80-23419616"><img
+                                src="https://swasti.org/assets\front_end\images\telphone.svg" alt="">Phone: +91-80-23419616</a>
+                    </div>
+                    <div class="social-share">
+            <a target="_blank" href="https://twitter.com/swastihc"> <img src="https://swasti.org/assets\front_end\images\twitter.svg"
+                alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/company/swasti-health-catalyst/"> <img src="https://swasti.org/assets\front_end\images\linkdin.svg"
+                alt=""></a>
+            <a target="_blank" href="https://www.youtube.com/user/SwastiHRC"> <img src="https://swasti.org/assets\front_end\images\youtube.svg"
+                alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/swastihc/"> <img src="https://swasti.org/assets\front_end\images\instagram.svg"
+                alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/Swasti.HealthCatalyst/"> <img src="https://swasti.org/assets\front_end\images\facebook.svg"
+                alt=""></a>
+          </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-sec">
+            <p>Copyright Swasti 2024</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://swasti.org/assets/front_end/js/main.js"></script>
+  <!-- Footer - End   -->
+  <script>
+     Sharect.appendCustomShareButtons([{
+  icon:'<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="24px" height="24px">    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg>',
+  url: 'https://www.linkedin.com/sharing/share-offsite/?url=PAGE_URL'
+}])
+      Sharect.config({
+  facebook: true,
+  twitter: true,
+
+  backgroundColor: '#ec0c6e',
+  iconColor: '#FFF',
+  selectableElements: ['p'],
+})
+      Sharect.init()
+      
+    </script>
+</body>
+</html>
