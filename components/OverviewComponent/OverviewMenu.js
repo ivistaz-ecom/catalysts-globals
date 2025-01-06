@@ -11,8 +11,7 @@ const OverviewMenu = () => {
       {/* Button to open the menu */}
       <button
         onClick={handleToggle}
-        className="absolute top-0 left-0 bg-black p-2 text-white flex items-center justify-center"
-        style={{ zIndex: 50 }}
+        className="fixed top-0 left-0 bg-black p-2 text-white flex items-center justify-center z-50"
       >
         {/* Hamburger Icon with SVG */}
         <svg
