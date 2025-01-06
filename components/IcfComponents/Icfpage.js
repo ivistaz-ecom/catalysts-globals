@@ -1,19 +1,44 @@
-import React, { useState } from "react"
-import Image from "next/image"
+import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const Icfpage = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const scrollToSection = (id, offset = 0) => {
-    const section = document.getElementById(id)
+    const section = document.getElementById(id);
     if (section) {
       const sectionTop =
-        section.getBoundingClientRect().top + window.scrollY + offset
-      window.scrollTo({ top: sectionTop, behavior: "smooth" })
+        section.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top: sectionTop, behavior: "smooth" });
     }
-  }
+  };
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        isMenuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+      document.addEventListener("mousedown", handleOutsideClick);
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [isMenuOpen]);
 
   return (
     <div
@@ -27,7 +52,7 @@ const Icfpage = () => {
       }}
     >
       {/* Menu Section */}
-      <div className="bg-black text-white w-full py-2  sm:py-10 fixed z-50">
+      <div className="bg-black text-white w-full py-2 sm:py-10 fixed z-50 mb-10">
         <div className="flex justify-between items-center px-4 md:px-10">
           {/* Hamburger Icon */}
           <button
@@ -98,11 +123,14 @@ const Icfpage = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-black z-50 flex flex-col items-center space-y-4 pb-2 text-sm md:hidden">
+          <div
+            ref={menuRef}
+            className="absolute top-full left-0 w-full bg-black z-50 flex flex-col items-center space-y-4 pb-4 text-sm md:hidden"
+          >
             <a
               onClick={() => {
-                scrollToSection("Icfpage", -50)
-                setIsMenuOpen(false)
+                scrollToSection("Icfpage", -50);
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -110,8 +138,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("whoAreWe", -50)
-                setIsMenuOpen(false)
+                scrollToSection("whoAreWe", -50);
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -119,8 +147,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("WhereWeWork", -50)
-                setIsMenuOpen(false)
+                scrollToSection("WhereWeWork", -50);
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -128,8 +156,8 @@ const Icfpage = () => {
             </a>
             <a
               onClick={() => {
-                scrollToSection("Ourteam", -50)
-                setIsMenuOpen(false)
+                scrollToSection("Ourteam", -50);
+                setIsMenuOpen(false);
               }}
               className="cursor-pointer"
             >
@@ -173,7 +201,7 @@ const Icfpage = () => {
         </h3>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Icfpage
+export default Icfpage;
