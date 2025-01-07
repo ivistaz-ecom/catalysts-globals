@@ -14,7 +14,7 @@ const FuzhioBlock = () => {
               alt="Fuzhio Logo"
               width={100}
               height={100}
-              className="w-32 h-16 object-contain "
+              className="w-44 h-16 object-contain "
               id="fuzhio"
             />
           </div>
@@ -31,7 +31,7 @@ const FuzhioBlock = () => {
         </div>
 
         <div className="bg-white px-4 py-8 mt-8">
-        <h2 className="md:text-[32px] text-[22px] bg-[#BAD46F]  p-1 inline-block ">Impact Product Marketing Firm</h2>
+        <h2 className="md:text-[32px] text-[22px] bg-[#BAD46F]  p-1  ">Impact Product Marketing Firm</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
             <div>
               <p className="pt-5">
@@ -39,7 +39,7 @@ const FuzhioBlock = () => {
                   href="https://fuzhio.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600"
+                  className="text-blue-600 underline"
                 >
                   Fuzhio
                 </Link>
@@ -68,11 +68,11 @@ const FuzhioBlock = () => {
             </div>
             <div>
               <Image
-                src="/img/fuzhioimg.png" // Replace with the correct image path
+                src="/img/fuzhioimg.png" 
                 alt="Fuzhio Info"
                 width={500}
                 height={400}
-                className="w-[800] h-[700px] lg:mt-[-40px]"
+                className="w-[800] h-[700px] lg:mt-[-44px]"
               />
             </div>
           </div>

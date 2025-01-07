@@ -3,7 +3,7 @@ import Link from "next/link"
 const CatalystBlock = () => {
   return (
     <div className="mb-16 ">
-      <div className="bg-[#D7EEE8] px-4 py-8 container mx-auto">
+      <div className="bg-[#D4E2EC] px-4 py-8 container mx-auto">
         <div className="flex items-center justify-between gap-4">
           <div>
             <Image
@@ -11,7 +11,7 @@ const CatalystBlock = () => {
               alt="Upfront Logo"
               width={100}
               height={100}
-              className="w-32 h-16 object-contain "
+              className="w-44 h-16 object-contain "
               id="catalysts"
             />
              </div>
@@ -39,7 +39,7 @@ const CatalystBlock = () => {
                 stories of change and impact. Our strategy framework entails
                 thought leadership, building synergy, and
               </p>
-              <h2 className="md:text-[32px] text-[22px] bg-[#D4E2EC]  p-1 inline-block ">Estd. 2016</h2>
+              <h2 className="md:text-[32px] text-[22px] bg-[#D4E2EC]   p-1 inline-block ">Estd. 2016</h2>
             </div>
             {/* Right Column */}
             <div className="flex justify-end">

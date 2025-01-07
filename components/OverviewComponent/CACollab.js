@@ -4,11 +4,11 @@ import Link from "next/link"
 const CACollab = () => {
   return (
     <div className="">
-      <div className="bg-[#D7EEE8] px-4 py-8 container mx-auto">
+      <div className="bg-[#B8DFD4] px-4 py-8 container mx-auto">
         <div className="flex items-center justify-between gap-4">
           <div>
             <Image
-              src="/img/collablogo.png" 
+              src="/img/collablogo.png"
               alt="CAS Logo"
               width={100}
               height={100}
@@ -30,7 +30,7 @@ const CACollab = () => {
 
         {/* Content Section */}
         <div className="bg-white p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             {/* Left Column */}
             <div>
               <p>
@@ -46,9 +46,16 @@ const CACollab = () => {
                 addresses issues affecting millions of vulnerable people and
                 ensures these individuals have access to vital livelihood,
                 health, social protection, and climate impact solutions.
-              </p><br />
-              <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8]  p-1 inline-block ">Estd. 2022</h2><br/><br/>
-              <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8]  p-1 inline-block ">Our Reach:</h2>
+              </p>
+              <br />
+              <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8]  p-1 inline-block ">
+                Estd. 2022
+              </h2>
+              <br />
+              <br />
+              <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8]  p-1 inline-block ">
+                Our Reach:
+              </h2>
               <ul className="mt-4 space-y-4">
                 <li className="flex items-center">
                   <Image
@@ -93,79 +100,91 @@ const CACollab = () => {
             <div>
               <div>
                 <Image
-                  src="/img/collabgroup.png"
+                  src="/img/Cms/Cac_bg_img.png"
                   alt="CA Group"
                   width={500}
                   height={300}
-                  className="w-full h-auto"
+                  className="w-44 h-44 lg:-ms-7 "
                 />
               </div>
-              <div className="mt-6 space-y-6">
-                {/* Row 1 */}
-                <div className="flex items-start">
+              <div className="lg:px-10">
+                <div>
                   <Image
-                    src="/img/caciconr1.svg"
-                    alt="Icon Orchestrate"
-                    width={80}
-                    height={80}
+                    src="/img/collabgroup.png"
+                    alt="CA Group"
+                    width={500}
+                    height={300}
+                    className="w-full h-auto lg:-mt-16 "
                   />
-                  <div className="ml-4">
-                    <h4 className="text-lg font-bold">Orchestrate</h4>
-                    <p>
-                      Functional governance systems that actively meet the needs
-                      of the vulnerable and enable human capital for emergency
-                      response.
-                    </p>
-                  </div>
                 </div>
-                {/* Row 2 */}
-                <div className="flex items-start">
-                  <Image
-                    src="/img/caciconr2.svg"
-                    alt="Icon Influence"
-                    width={80}
-                    height={80}
-                  />
-                  <div className="ml-4">
-                    <h4 className="text-lg font-bold">Influence</h4>
-                    <p>
-                      Significant policy and practice changes, achieved through
-                      global collaboration by amplifying components/issues.
-                    </p>
-                  </div>
-                </div>
-                {/* Row 3 */}
-                <div className="flex items-start">
-                  <Image
-                    src="/img/caciconr3.svg"
-                    alt="Icon Solve"
-                    width={80}
-                    height={80}
-                  />
-                  <div className="ml-4">
-                    <h4 className="text-lg font-bold">Solve</h4>
-                    <p>
-                      Scalable solutions, response time, and district-level
-                      integrated action.
-                    </p>
+                <div className="border border-gray-300 rounded-b-3xl">
+                  <div className="mt-6 space-y-12 mb-5 p-4">
+                    {/* Row 1 */}
+                    <div className="flex items-start">
+                      <Image
+                        src="/img/caciconr1.svg"
+                        alt="Icon Orchestrate"
+                        width={80}
+                        height={80}
+                      />
+                      <div className="ml-4">
+                        <h4 className="text-lg font-bold">Orchestrate</h4>
+                        <p>
+                          Functional governance systems that actively meet the
+                          needs of the vulnerable and enable human capital for
+                          emergency response.
+                        </p>
+                      </div>
+                    </div>
+                    {/* Row 2 */}
+                    <div className="flex items-start ">
+                      <Image
+                        src="/img/caciconr2.svg"
+                        alt="Icon Influence"
+                        width={80}
+                        height={80}
+                      />
+                      <div className="ml-4">
+                        <h4 className="text-lg font-bold">Influence</h4>
+                        <p>
+                          Significant policy and practice changes, achieved
+                          through global collaboration by amplifying
+                          components/issues.
+                        </p>
+                      </div>
+                    </div>
+                    {/* Row 3 */}
+                    <div className="flex items-start">
+                      <Image
+                        src="/img/caciconr3.svg"
+                        alt="Icon Solve"
+                        width={80}
+                        height={80}
+                      />
+                      <div className="ml-4">
+                        <h4 className="text-lg font-bold">Solve</h4>
+                        <p>
+                          Scalable solutions, response time, and district-level
+                          integrated action.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         {/* Footer */}
-      
       </div>
       <div className="bg-black text-center text-white py-8">
-          <Link
-            href="mailto:contactus@catalysts.org"
-            className="underline hover:text-gray-400"
-          >
-            contactus@catalysts.org
-          </Link>
-        </div>
+        <Link
+          href="mailto:contactus@catalysts.org"
+          className="text-2xl hover:text-gray-400"
+        >
+          contactus@catalysts.org
+        </Link>
+      </div>
     </div>
   )
 }

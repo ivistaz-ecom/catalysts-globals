@@ -42,26 +42,26 @@ const CmsBlock = () => {
               <br />
               <p className="mt-8">
                 <Link
-                  href="https://solvists.org"
+                  href="https://cms.org.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600"
+                  className="text-blue-600 underline"
                 >
                   CMS
-                </Link>&nbsp;
-                specialises in solving problems with change agents through
-                effective actions and growth solutions for scale, impact, and
-                sustainability. We are a global powerhouse that accelerates the
-                Scale, Impact, and Sustainability of change agents who affect
-                SDGs.
+                </Link>
+                &nbsp; specialises in solving problems with change agents
+                through effective actions and growth solutions for scale,
+                impact, and sustainability. We are a global powerhouse that
+                accelerates the Scale, Impact, and Sustainability of change
+                agents who affect SDGs.
               </p>
               <p className="mt-8 mb-8">
                 At&nbsp;
                 <Link
-                  href="https://solvists.org"
+                  href="https://cms.org.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600"
+                  className="text-blue-600 underline"
                 >
                   CMS
                 </Link>
@@ -82,67 +82,67 @@ const CmsBlock = () => {
             </div>
             <div>
               <Image
-                src="/img/Cms/cms-block-img.fe41b791854c7762cae3.png" // Use the direct URL here
+                src="/img/Cms/cms-block-img.fe41b791854c7762cae3.png"
                 alt="CMS Initiatives"
                 width={400}
                 height={400}
-                className="block"
+                className="block w-full  "
               />
               <br />
-              <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8] inline-block p-1">
+              <h2 className="md:text-[32px] text-[22px] bg-[#D7EEE8] inline-block p-1 mx-6">
                 Est. 1994
               </h2>
 
-              <ul className="mt-5">
+              <ul className="mt-5 mx-6">
                 <li>1000+ engagements</li>
                 <li>500+ organizations in development mentored</li>
               </ul>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-blue p-6 text-center">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-12">
+            <div className="bg-blue p-6 text-center flex flex-col items-center bg-[#D7EEE8] ">
               <Image
                 src="/img/Cms/cmsicon-1.png" // Use the direct URL here
                 alt="icon 1"
                 width={80}
                 height={80}
-                className="mx-auto mb-4"
+                className="mb-4 w-20 h-20"
               />
-              <p>
-                <b>Co-Invest in success of key change agents</b>
+              <p className="font-bold lg:min-h-10">
+                Co-Invest in success of key change agents
               </p>
               <p>
                 Leverage resources for effective action while addressing complex
                 issues.
               </p>
             </div>
-            <div className="bg-blue p-6 text-center">
+            <div className="bg-blue p-6 text-center flex flex-col items-center bg-[#D7EEE8] ">
               <Image
                 src="/img/Cms/cmsicon2.png" // Use the direct URL here
                 alt="icon 2"
                 width={80}
                 height={80}
-                className="mx-auto mb-4"
+                className="mb-4 w-20 h-20"
               />
-              <p>
-                <b>Raise and shape investments</b>
+              <p className="font-bold lg:min-h-10">
+                Raise and shape investments
               </p>
               <p>
                 Secure higher value for investments made, through growth-driven
                 solutions.
               </p>
             </div>
-            <div className="bg-blue p-6 text-center">
+            <div className="bg-blue p-6 text-center flex flex-col items-center bg-[#D7EEE8] ">
               <Image
                 src="/img/Cms/cmsicon3.png" // Use the direct URL here
                 alt="icon 3"
                 width={80}
                 height={80}
-                className="mx-auto mb-4"
+                className="mb-4 w-20 h-20"
               />
-              <p>
-                <b>Invest in scalable solutions</b>
+              <p className="font-bold lg:min-h-10 ">
+                Invest in scalable solutions
               </p>
               <p>
                 Incubate and scale sectoral solutions which deliver value and

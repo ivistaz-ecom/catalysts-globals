@@ -41,7 +41,7 @@ const GreenFnBlock = () => {
                     href="https://greenfoundation.in"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600"
+                    className="text-blue-600 underline"
                   >
                     GREEN Foundation
                   </Link>
@@ -68,11 +68,11 @@ const GreenFnBlock = () => {
               </div>
               <div>
                 <Image
-                  src="/img/green-poster.png" // Replace with the correct image path
+                  src="/img/green-poster.png" 
                   alt="Green Foundation Poster"
                   width={600}
                   height={400}
-                  className="w-[400px] h-[500px] lg:mt-[-40px] lg:ps-24"
+                  className="w-[450px] h-[550px] lg:mt-[-40px] lg:ps-24"
                 />
               </div>
             </div>
