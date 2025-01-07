@@ -104,9 +104,10 @@ const CACollab = () => {
                   alt="CA Group"
                   width={500}
                   height={300}
-                  className="w-44 h-44 lg:-ms-7 "
+                  className="w-44 h-44 lg:block hidden lg:-ms-7"
                 />
               </div>
+
               <div className="lg:px-10">
                 <div>
                   <Image
