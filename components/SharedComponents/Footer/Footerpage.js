@@ -1,17 +1,17 @@
-"use client"
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
 
 const Contactus = () => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   // Hide the footer on the "/overview" page
   if (pathname === "/overview") {
-    return null
+    return null;
   }
 
   return (
@@ -19,7 +19,7 @@ const Contactus = () => {
       <div className="footer-contactus py-12 bg-[#E8E8EF]">
         <div className="container mx-auto lg:px-2">
           <h3 className="text-[36px] text-center mb-8">Contact Us</h3>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-1/3 p-4">
               <div className="footer-locations-single text-left">
                 <Image
@@ -58,11 +58,10 @@ const Contactus = () => {
               <div className="pt-6">
                 <h5 className="text-[24px] font-medium mb-3">Delhi</h5>
                 <p className="text-gray-700 mb-4">
-                  Swasti Health Catalyst, A-10 (Second Floor), Green Park New
-                  Delhi-110016
+                  C-23, Ground Floor, Safdarjung Development Area, New Delhi-110016
                 </p>
                 <Link
-                  href="https://goo.gl/maps/SeiB97CAc1vb267i8"
+                  href="https://maps.app.goo.gl/ie6SvcnNAYprCfVeA?g_st=com.google.maps.preview.copy"
                   className="text-black rounded-full bg-[#FFFFFF] px-5 py-3 border-black border"
                   target="_blank"
                 >
@@ -70,7 +69,7 @@ const Contactus = () => {
                 </Link>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-4">
+            {/* <div className="w-full md:w-1/3 p-4">
               <div className="footer-locations-single text-left">
                 <Image
                   src="/img/bhopal-office.jpg"
@@ -94,7 +93,7 @@ const Contactus = () => {
                   Get Directions
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -105,7 +104,7 @@ const Contactus = () => {
         </p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Contactus
+export default Contactus;
