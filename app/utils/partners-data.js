@@ -145,7 +145,7 @@ export const networks = [
 
 export const bilaterals = [
   { img: "/img/department-for-international-development.jpeg" },
-  { img: "/img/usaid.png" },
+  // { img: "/img/usaid.png" },
   { img: "/img/swiss-agency.jpg" },
 ]
 
